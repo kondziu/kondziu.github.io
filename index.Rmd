@@ -1,0 +1,57 @@
+---
+output: html_document
+title: Konrad Siek
+---
+
+<style>
+img[alt$="pin"]   { width: 66px; padding: 5px; float: right; }
+img[alt$="pic"] { width: 150px; float: right; vertical-align: top; padding-left: 15px;}
+</style>
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo=FALSE)
+```
+
+![pic](_img/photo2.jpg)
+<a href="mailto:siekkonrⓐcvut.cz">siekkonrⓐcvut.cz</a>  
+
+I currently do research on the [R language](http://www.r-project.org) and its use of laziness.  
+
+I am interested in distributed systems, programming languages, and their intersection. In particular, I'm interested in transactional memory, concurrency, distributed systems, and functional programming.  
+
+My PhD thesis explored the safety and parallelism trade-off in distributed transactional memory.
+
+I seek difficult ways to solve simple problems and sometimes vice versa.
+<br/>
+<br/>
+
+<hr/>
+## Positions
+
+![pin](_img/cvut.jpg)
+![pin](_img/prl-prg-small.png) 
+Post-doc    
+[PRL-PRG](http://prl-prg.github.io) at [Czech Technical University in Prague](http://www.cvut.cz)  
+<br/>
+
+![pin](_img/neu.png)
+![pin](_img/prl.png) 
+Research assistant/instructor (occasionally)  
+[PRL](http://prl.ccs.neu.edu) at [Northeastern](http://www.northeastern.edu)  
+<br/>
+
+![pin](_img/put.png) 
+![pin](_img/dsg.png) 
+Research assistant (currently on sabbatical)  
+[DSG](http://dsg.cs.put.poznan.pl) at [Poznań University of Technology](http://www.put.poznan.pl)  
+<br/>
+
+<hr/>
+
+## Thesis
+
+![pin](_img/put.png) 
+PhD from [Poznań University of Technology](http://www.put.poznan.pl)  
+Distributed Pessimistic Transactional Memory:   
+Algorithms and Properties ([pdf](_pub/dissertation.pdf), [tex](_pub/dissertation.tar.gz))  
+Advisor: [Paweł T. Wojciechowski](http://www.cs.put.poznan.pl/pawelw)  

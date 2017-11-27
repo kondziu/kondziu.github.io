@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+
+
+
+<title></title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-1.1/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-1.1/highlight.js"></script>
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs && document.readyState && document.readyState === "complete") {
+   window.setTimeout(function() {
+      hljs.initHighlighting();
+   }, 0);
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+
+</head>
+
+<body>
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 51px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+
+.section h2 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h3 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h4 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h5 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h6 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+
+<div class="container-fluid main-container">
+
+<!-- tabsets -->
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+</script>
+
+<!-- code folding -->
+
+
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Konrad Siek</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="research.html">research</a>
+</li>
+<li>
+  <a href="presentations.html">talks</a>
+</li>
+<li>
+  <a href="contact.html">contact</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+
+</div>
+
+
+<div id="thesis-defense" class="section level2">
+<h2>Thesis defense</h2>
+<p>Konrad Siek.<br />
+<strong>Distributed Pessimistic Transactional Memory: Algorithms and Properties</strong>.<br />
+Poznań University of Technology. January 4, 2017. Poznań, Poland. [<a href="_talks/dissertation.pdf">PDF slides</a>]</p>
+</div>
+<div id="conferences" class="section level2">
+<h2>Conferences</h2>
+<p>Paweł T. Wojciechowski, Konrad Siek.<br />
+<strong>Atomic RMI 2: Distributed Transactions for Java</strong>.<br />
+AGERE’16. October 30, 2016. Amsterdam, Netherlands. [<a href="_talks/agere16.pdf">PDF slides</a>]</p>
+<p>Konrad Siek, Paweł T. Wojciechowski.<br />
+<strong>Brief Announcement: Relaxing Opacity in Pessimistic Transactional Memory</strong>.<br />
+DISC’14. October 12-15, 2014. Austin, TX, USA. [<a href="_talks/disc14-talk.pdf">PDF slides</a>, <a href="https://drive.google.com/file/d/0BxWQ0jCVrZPjME9KRVZwMjFtSVk/view?usp=sharing">OGG</a>, <a href="https://drive.google.com/file/d/0BxWQ0jCVrZPjZTJSSWZrUkxBSzg/view?usp=sharing">MP3</a>]</p>
+<p>Konrad Siek, Paweł T. Wojciechowski.<br />
+<strong>Zen and the Art of Concurrency Control: An Exploration of TM Safety Property Space with Early Release in Mind</strong>.<br />
+WTTM’14. July 14, 2014. Paris, France. [<a href="_talks/wttm14-talk.pdf">PDF slides</a>, <a href="https://drive.google.com/file/d/0BxWQ0jCVrZPjazVoSTVkdjBXdjg/edit?usp=sharing">OGG</a>, <a href="https://drive.google.com/file/d/0BxWQ0jCVrZPjTzlJeVMtazRfaXM/edit?usp=sharing">MP3</a>]</p>
+<p>Konrad Siek, Paweł T. Wojciechowski.<br />
+<strong>Atomic RMI: a Distributed Transactional Memory Framework</strong>.<br />
+HLPP’14. July 3-4, 2014. Amsterdam, Neatherlands. [<a href="_talks/hlpp14-talk.pdf">PDF slides</a>, <a href="https://drive.google.com/file/d/0BxWQ0jCVrZPjZHN2X2U1M0hMUDg/edit?usp=sharing">OGG</a>, <a href="https://drive.google.com/file/d/0BxWQ0jCVrZPjd2JZQ1JTQU9sMkE/edit?usp=sharing">MP3</a>]</p>
+<p>Paweł T. Wojciechowski, Konrad Siek.<br />
+<strong>Having Your Cake and Eating it Too: Combining Strong and Eventual Consistency</strong>.<br />
+PaPEC’14. April 13, 2014. Amsterdam, Neatherlands. [<a href="_talks/papec14-talk.pdf">PDF slides</a>]</p>
+<p>Konrad Siek, Paweł T. Wojciechowski.<br />
+<strong>Towards a Fully-Articulated Pessimistic Distributed Transactional Memory</strong>.<br />
+SPAA’13. July 23-25, 2013. Montréal, Canada. [<a href="_talks/spaa13-talk.pdf">PDF slides</a>]</p>
+<p>Paweł T. Wojciechowski, Konrad Siek.<br />
+<strong>Rollbacks in Pessimistic Distributed TM</strong>.<br />
+TRANSFORM Summer School on Research Directions in Distributed Computing. June 10-14, 2013. Heraklion, Greece. [<a href="_talks/srdc13-talk.pdf">PDF slides</a>]</p>
+<p>Konrad Siek, Paweł T. Wojciechowski.<br />
+<strong>A Formal Design of a Tool for Static Analysis of Upper Bounds on Object Calls in Java</strong>.<br />
+FMICS’12. August 27-28, 2012. Paris, France. [<a href="_talks/fmics12.pdf">PDF slides</a>]</p>
+<p>Konrad Siek, Paweł T. Wojciechowski.<br />
+<strong>Statically Computing Upper Bounds on Object Calls for Pessimistic Concurrency Control</strong>.<br />
+EC². July 20-21, 2010. Edinburgh, UK. [<a href="_talks/ec2.pdf">PDF slides</a>]</p>
+</div>
+<div id="seminars" class="section level2">
+<h2>Seminars</h2>
+<p>Konrad Siek.<br />
+<strong>Rozproszona Pesymistyczna Pamięć Transakcyjna: Algorytmy i Własności</strong>.<br />
+FC PUT. February 10, 2015. Poznań, Poland. [<a href="_talks/otwarcie.pdf">PDF slides</a>]</p>
+<p>Konrad Siek, Paweł T. Wojciechowski.<br />
+<strong>Nowe Algorytmy i Własności do Pesymistycznego Sterowania Współbieżnością w Rozproszonej Pamięci Transakcyjnej</strong>.<br />
+Institute of CS, PUT. January 13, 2015. Poznań, Poland. [<a href="_talks/put15.pdf">PDF slides</a>]</p>
+<p>Konrad Siek, Paweł T. Wojciechowski.<br />
+<strong>Combining Strong and Eventual Consistency in Distributed TM</strong>.<br />
+LPD EPFL. September 10, 2014. Lausanne, Switzerland. [<a href="_talks/epfl14.pdf">PDF slides</a>]</p>
+<p>Konrad Siek, Paweł T. Wojciechowski.<br />
+<strong>Having Your Cake and Eating it Too: Combining Strong and Eventual Consistency</strong>.<br />
+DSG PUT. May 2014. Poznań, Poland. [<a href="_talks/put14a.pdf">PDF slides</a>]</p>
+<p>Konrad Siek, Paweł T. Wojciechowski.<br />
+<strong>Safety of Pessimistic Distributed Transactional Memory</strong>.<br />
+DSG PUT. November 19, 2013. Poznań, Poland. [<a href="_talks/put13b.pdf">PDF slides</a>]</p>
+<p>Konrad Siek, Paweł T. Wojciechowski.<br />
+<strong>Towards a Fully-articulated Pessimistic Distributed Transacitonal Memory</strong>.<br />
+DSG PUT. May 14, 2013. Poznań, Poland. [<a href="_talks/put13a.pdf">PDF slides</a>]</p>
+<!--## For students
+
+Konrad Siek.  
+**Bezbolesne programowanie współbieżne.**  
+KN SKiSR. May 9 2012. 
+[[PDF slides](_talks/painless-concurency.pdf)]-->
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

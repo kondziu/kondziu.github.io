@@ -1,0 +1,31 @@
+---
+output: html_document
+title: Contact information
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+**Konrad Siek**  <<a href="mailto:siekkonrⓐcvut.cz">siekkonrⓐcvut.cz</a>>
+
+<hr/>
+
+Probable physical locations: 
+
+  - A 1254, Fakulta Stavební, CTU in Prague
+  - 330 WVH, Northeastern
+  
+<hr/>  
+  
+Profiles:
+
+  - [LinkedIn](https://pl.linkedin.com/in/konrad-siek-125b5a90)
+  - [ResearchGate](https://www.researchgate.net/profile/Konrad_Siek)
+
+<hr/>  
+  
+Websites:
+
+  - [www.cs.put.poznan.pl/ksiek/](http://www.cs.put.poznan.pl/ksiek/)
+  - [grittyscripts.blogspot.com](http://grittyscripts.blogspot.com/)

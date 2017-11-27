@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+
+
+
+<title>Research</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-1.1/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-1.1/highlight.js"></script>
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs && document.readyState && document.readyState === "complete") {
+   window.setTimeout(function() {
+      hljs.initHighlighting();
+   }, 0);
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+
+</head>
+
+<body>
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 51px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+
+.section h2 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h3 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h4 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h5 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h6 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+
+<div class="container-fluid main-container">
+
+<!-- tabsets -->
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+</script>
+
+<!-- code folding -->
+
+
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Konrad Siek</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="research.html">research</a>
+</li>
+<li>
+  <a href="presentations.html">talks</a>
+</li>
+<li>
+  <a href="contact.html">contact</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">Research</h1>
+
+</div>
+
+
+<p>Konrad Siek (advisor: Paweł T. Wojciechowski).<br />
+<strong>Distributed Pessimistic Transactional Memory: Algorithms and Properties</strong> (doctoral dissertation).<br />
+Faculty of Computing Science at Poznań University of Technology.<br />
+Submitted June 2016, defended January 2017.<br />
+[<a href="_pub/dissertation.pdf">PDF</a>, <a href="_pub/dissertation.tar.gz">TeX</a>, <a href="https://pp-hip.pfsl.poznan.pl/ipac20/ipac.jsp?session=151C8173887J1.41469&amp;profile=put-library&amp;uri=link=3100007~!756389~!3100001~!3100002&amp;aspect=basic_search&amp;menu=search&amp;ri=8&amp;source=~!bpptest&amp;term=Distributed+Pessimistic+Transactional+Memory%3A+Algorithms+and+Properties+%2F&amp;index=ALTITLE">PUT</a>]</p>
+<p><br/></p>
+<div id="papers" class="section level2">
+<h2>Papers</h2>
+<p>Paweł Kobyliński, Konrad Siek, Jan Baranowski, Paweł T. Wojciechowski.<br />
+<strong>Helenos: A Realistic Benchmark for Distributed Transactional Memory</strong>.<br />
+Journal of Software: Practice and Experience. Volume TBA, issue TBA. October 2017.<br />
+[<a href="http://onlinelibrary.wiley.com/doi/10.1002/spe.2548/full">Wiley</a>]</p>
+<hr/>
+<p>Konrad Siek, Paweł T. Wojciechowski.<br />
+<strong>Proving Opacity of Transactional Memory with Early Release</strong>.<br />
+Foundations of Computing and Decision Sciences. Volume 40, issue 4. December 2015.<br />
+[<a href="http://www.degruyter.com/view/j/fcds.2015.40.issue-4/fcds-2015-0018/fcds-2015-0018.xml?format=INT%3E">De Gruyter</a>]</p>
+<hr/>
+<p>Konrad Siek, Paweł T. Wojciechowski.<br />
+<strong>Atomic RMI: a Distributed Transactional Memory Framework</strong>.<br />
+In proceedings of HLPP 2014: the 7th International Symposium on High-level Parallel Programming and Applications. International Journal of Parallel Programming, Volume 44, Issue 3, pp 598-619. April 2015.<br />
+[<a href="http://link.springer.com/article/10.1007/s10766-015-0361-x%3E">Springer</a>]</p>
+<hr/>
+<p>Konrad Siek, Paweł T. Wojciechowski.<br />
+<strong>A Formal Design of a Tool for Static Analysis of Upper Bounds on Object Calls in Java</strong>.<br />
+In Proceedings of FMICS 2012: the 17th International Workshop on Formal Methods for Industrial Critical Systems (co-located with FM 2012).<br />
+Lecture Notes in Computer Science Volume 7437, pp 192–206. August 2012.<br />
+[<a href="https://link.springer.com/chapter/10.1007/978-3-642-32469-7_13">Springer</a>, <a href="_pub/fmics12.pdf%3E">PDF</a>]</p>
+<p><br/></p>
+</div>
+<div id="short-papers" class="section level2">
+<h2>Short papers</h2>
+<p>Paweł T. Wojciechowski, Konrad Siek.<br />
+<strong>Atomic RMI 2: Distributed Transactions for Java</strong>.<br />
+In Proceedings of AGERE’16: the 6th International Workshop on Programming Based on Actors, Agents, and Decentralized Control. October 2016.<br />
+[<a href="https://2016.splashcon.org/event/agere2016-atomic-rmi-2-distributed-transactions-for-java">abstract</a>]</p>
+<p>Konrad Siek, Paweł T. Wojciechowski.<br />
+<strong>Brief Announcement: Relaxing Opacity in Pessimistic Transactional Memory</strong>.<br />
+In Proceedings of DISC’14: the 28th International Symposium on Distributed Computing. October 2014.<br />
+[<a href="_pub/disc14.pdf">PDF</a>]</p>
+<hr/>
+<p>Konrad Siek, Paweł T. Wojciechowski.<br />
+<strong>Zen and the Art of Concurrency Control: An Exploration of TM Safety Property Space with Early Release in Mind</strong>.<br />
+In Proceedings of WTTM’14: the 6th Workshop on the Theory of Transactional Memory. July 2014.<br />
+[<a href="_pub/wttm14.pdf">PDF</a>]</p>
+<hr/>
+<p>Paweł T. Wojciechowski, Konrad Siek.<br />
+<strong>Having Your Cake and Eating it Too: Combining Strong and Eventual Consistency</strong>.<br />
+In Proceedings of PaPEC 2014: the 1st Workshop on the Principles and Practice of Eventual Consistency. April 2014.<br />
+[<a href="_pub/papec14.pdf">PDF</a>]</p>
+<hr/>
+<p>Konrad Siek, Paweł T. Wojciechowski.<br />
+<strong>Towards a Fully-Articulated Pessimistic Distributed Transactional Memory</strong> (brief announcement).<br />
+In Proceedings of SPAA 2013: the 25th ACM Symposium on Parallelism in Algorithms and Architectures. July 2013.<br />
+[<a href="_pub/spaa13.pdf">PDF</a>]</p>
+<hr/>
+<p>Paweł T. Wojciechowski, Konrad Siek.<br />
+<strong>Rollbacks in Pessimistic Distributed TM</strong>.<br />
+SRDC’13: TRANSFORM Summer School on Research Directions in Distributed Computing. June 2013.<br />
+[<a href="srdc13-abstract.pdf">abstract</a>]</p>
+<hr/>
+<p>Paweł T. Wojciechowski, Konrad Siek.<br />
+<strong>Transaction Concurrency Control via Dynamic Scheduling Based on Static Analysis</strong> (extended abstract).<br />
+In Proceedings of WTM 2012: Euro-TM Workshop on Transactional Memory (co-located with ACM SIGOPS EuroSys 2012). April 2012.<br />
+[<a href="http://www.eurotm.org/action-meetings/wtm2012/program/abstracts#Wojciechowski">abstract</a>]</p>
+<hr/>
+<p>Konrad Siek, Paweł T. Wojciechowski.<br />
+<strong>Statically Computing Upper Bounds on Object Calls for Pessimistic Concurrency Control</strong> (extended abstract).<br />
+In Proceedings of EC :math:<code>^2</code> 2010: Workshop on Exploiting Concurrency Efficiently and Correctly (co-located with CAV 2010). July 2010.<br />
+[<a href="_pub/sw10.pdf">PDF</a>]</p>
+<p><br/></p>
+</div>
+<div id="technical-reports" class="section level2">
+<h2>Technical reports</h2>
+<p>Jan Baranowki, Konrad Siek, Paweł T. Wojciechowski.<br />
+<strong>Analiza Programów Wzorcowych dla Rozproszonej Pamieci Transakcyjnej</strong>.<br />
+Raport RB-3/15. Instytut Informatyki Politechniki Poznańskiej.<br />
+[<a href="_pub/rb-3-15.pdf%60">PDF</a>]</p>
+<hr/>
+<p>Martin Witczak, Konrad Siek.<br />
+<strong>Rozproszony System Zarządzania Odtwarzaniem Mediów w Oparciu o Pesymistyczną Pamięć Transakcyjną</strong>.<br />
+Raport RB-4/15. Instytut Informatyki Politechniki Poznańskiej.<br />
+[<a href="_pub/rb-4-15.pdf%60">PDF</a>]</p>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
