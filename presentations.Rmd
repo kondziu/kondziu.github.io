@@ -191,3 +191,10 @@ KN SKiSR at PUT. May 9 2012. Poznań, Poland.
 [[PDF slides](talks/painless-concurency.pdf), 
  [Event website](https://dsg.cs.put.poznan.pl/wiki/talks/bezbolesne-programowanie-wspolbiezne)]
 
+<hr/>
+
+Konrad Siek.  
+**Transakcje Atomowe.**    
+(Atomic transactions.)    
+SKiSR specialty at PUT. Poznań, Poland.  
+[[Lecture website](http://www.cs.put.poznan.pl/ksiek/atomicrmi/atomicrmi.html)]

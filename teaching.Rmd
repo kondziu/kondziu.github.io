@@ -6,3 +6,50 @@ output: html_document
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
+<br/>
+
+## Northeastern University
+
+**Parallel Data Processing in MapReduce**. 
+Co-instructor (w/ Jan Vitek). Fall 2017.
+[[Website](http://janvitek.org/pdpmr/f17/)]
+
+<hr/>
+
+## Poznań University of Technology
+
+**Podstawy Informatyki**. 
+(Basic IT.) 
+Lab instructor. Winter 2009-2017. 
+[[Website](http://www.cs.put.poznan.pl/ksiek/pi/pi.html)]
+
+**Systemy Operacyjne I**. 
+(Operating systems I.)
+Lab instructor.
+[[Website](http://www.cs.put.poznan.pl/ksiek/sop/sop.html)]
+
+**Rozproszone Systemy Operacyjne Czasu Rzeczywistego **. 
+(Distributed Real-time Operating Systems.)
+Lab instructor.
+[[Website](http://www.cs.put.poznan.pl/ksiek/rsocr/rsocr.html)]
+
+**Sieci Komputerowe I.** 
+(Computer Networks I.)
+Lab instructor.
+[[Website](http://www.cs.put.poznan.pl/ksiek/sk/sk.html)]
+
+**Sieci Komputerowe II.** 
+(Computer Networks II.)
+Lab instructor.
+[[Website](http://www.cs.put.poznan.pl/ksiek/sk2/sk2.html)]
+
+**Metody Bezpiecznego Programowania (Programowanie Funkcyjne).** 
+(Safe Programming Methods, Functional Programming.)
+Lab co-instructor.
+[[Website](http://www.cs.put.poznan.pl/ksiek/fp/fp.html)]
+
+**Network and Programming Systems.**
+Lab instructor.
+[[Website](http://www.cs.put.poznan.pl/ksiek/naps/naps.html)]
+
+

@@ -5,10 +5,10 @@ navbar:
     left:
         - text: "research"
           href: research.html
-#        - text: "teaching"
-#          href: teaching.html
         - text: "talks"
           href: presentations.html
+        - text: "teaching"
+          href: teaching.html
 #        - text: "misc"
 #          href: http://www.cs.put.poznan.pl/ksiek/
         - text: "contact"
