@@ -1,11 +1,12 @@
 ---
 output: html_document
-title: Contact information
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 ```
+
+<br/>
 
 **Konrad Siek**  <<a href="mailto:siekkonrⓐcvut.cz">siekkonrⓐcvut.cz</a>>
 

@@ -12,7 +12,7 @@ img[alt$="pic"] { width: 150px; float: right; vertical-align: top; padding-left:
 knitr::opts_chunk$set(echo=FALSE)
 ```
 
-![pic](_img/photo2.jpg)
+![pic](img/photo2.jpg)
 <a href="mailto:siekkonrⓐcvut.cz">siekkonrⓐcvut.cz</a>  
 
 I currently do research on the [R language](http://www.r-project.org) and its use of laziness.  
@@ -28,20 +28,20 @@ I seek difficult ways to solve simple problems and sometimes vice versa.
 <hr/>
 ## Positions
 
-![pin](_img/cvut.jpg)
-![pin](_img/prl-prg-small.png) 
-Post-doc    
+![pin](img/cvut.jpg)
+![pin](img/prl-prg-small.png) 
+Post-doc research assistant    
 [PRL-PRG](http://prl-prg.github.io) at [Czech Technical University in Prague](http://www.cvut.cz)  
 <br/>
 
-![pin](_img/neu.png)
-![pin](_img/prl.png) 
-Research assistant/instructor (occasionally)  
+![pin](img/neu.png)
+![pin](img/prl.png) 
+Post-doc research assistant/instructor (occasionally)  
 [PRL](http://prl.ccs.neu.edu) at [Northeastern](http://www.northeastern.edu)  
 <br/>
 
-![pin](_img/put.png) 
-![pin](_img/dsg.png) 
+![pin](img/put.png) 
+![pin](img/dsg.png) 
 Research assistant (currently on sabbatical)  
 [DSG](http://dsg.cs.put.poznan.pl) at [Poznań University of Technology](http://www.put.poznan.pl)  
 <br/>
@@ -50,7 +50,7 @@ Research assistant (currently on sabbatical)
 
 ## Thesis
 
-![pin](_img/put.png) 
+![pin](img/put.png) 
 PhD from [Poznań University of Technology](http://www.put.poznan.pl)  
 Distributed Pessimistic Transactional Memory:   
 Algorithms and Properties ([pdf](_pub/dissertation.pdf), [tex](_pub/dissertation.tar.gz))  

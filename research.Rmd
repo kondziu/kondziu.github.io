@@ -1,20 +1,21 @@
 ---
 output: html_document
-title: Research
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 ```
+<br/>
 
+## Dissertation
 
 Konrad Siek (advisor: Paweł T. Wojciechowski).  
 **Distributed Pessimistic Transactional Memory: Algorithms and Properties** (doctoral dissertation).  
 Faculty of Computing Science at Poznań University of Technology.  
 Submitted June 2016, defended January 2017.  
-[[PDF](_pub/dissertation.pdf), [TeX](_pub/dissertation.tar.gz), [PUT](https://pp-hip.pfsl.poznan.pl/ipac20/ipac.jsp?session=151C8173887J1.41469&profile=put-library&uri=link=3100007~!756389~!3100001~!3100002&aspect=basic_search&menu=search&ri=8&source=~!bpptest&term=Distributed+Pessimistic+Transactional+Memory%3A+Algorithms+and+Properties+%2F&index=ALTITLE)]
+[[PDF](pub/dissertation.pdf), [TeX](pub/dissertation.tar.gz), [PUT](https://pp-hip.pfsl.poznan.pl/ipac20/ipac.jsp?session=151C8173887J1.41469&profile=put-library&uri=link=3100007~!756389~!3100001~!3100002&aspect=basic_search&menu=search&ri=8&source=~!bpptest&term=Distributed+Pessimistic+Transactional+Memory%3A+Algorithms+and+Properties+%2F&index=ALTITLE)]
 
-<br/>
+<hr/>
 
 ## Papers
 
@@ -48,7 +49,7 @@ Konrad Siek, Paweł T. Wojciechowski.
 **A Formal Design of a Tool for Static Analysis of Upper Bounds on Object Calls in Java**.  
 In Proceedings of FMICS 2012: the 17th International Workshop on Formal Methods for Industrial Critical Systems (co-located with FM 2012).  
 Lecture Notes in Computer Science Volume 7437, pp 192–206. August 2012.  
-[[Springer](https://link.springer.com/chapter/10.1007/978-3-642-32469-7_13), [PDF](_pub/fmics12.pdf>)]
+[[Springer](https://link.springer.com/chapter/10.1007/978-3-642-32469-7_13), [PDF](pub/fmics12.pdf>)]
 
 <br/>
 
@@ -63,7 +64,7 @@ Konrad Siek, Paweł T. Wojciechowski.
 **Brief Announcement: Relaxing Opacity in Pessimistic Transactional Memory**.  
 In Proceedings of DISC'14: the 28th International Symposium on Distributed Computing.
 October 2014.  
-[[PDF](_pub/disc14.pdf)]
+[[PDF](pub/disc14.pdf)]
 
 <hr/>
 
@@ -71,14 +72,14 @@ Konrad Siek, Paweł T. Wojciechowski.
 **Zen and the Art of Concurrency Control: An Exploration of TM Safety Property Space with Early Release in Mind**.  
 In Proceedings of WTTM'14: the 6th Workshop on the Theory of Transactional Memory. 
 July 2014.  
-[[PDF](_pub/wttm14.pdf)]
+[[PDF](pub/wttm14.pdf)]
 
 <hr/>
 
 Paweł T. Wojciechowski, Konrad Siek.  
 **Having Your Cake and Eating it Too: Combining Strong and Eventual Consistency**.  
 In Proceedings of PaPEC 2014: the 1st Workshop on the Principles and Practice of Eventual Consistency. April 2014.  
-[[PDF](_pub/papec14.pdf)]
+[[PDF](pub/papec14.pdf)]
 
 <hr/>
 
@@ -86,7 +87,7 @@ Konrad Siek, Paweł T. Wojciechowski.
 **Towards a Fully-Articulated Pessimistic Distributed Transactional Memory** (brief announcement).  
 In Proceedings of SPAA 2013: the 25th ACM Symposium on Parallelism in Algorithms and Architectures.
 July 2013.  
-[[PDF](_pub/spaa13.pdf)]
+[[PDF](pub/spaa13.pdf)]
 
 <hr/>
 
@@ -107,20 +108,20 @@ In Proceedings of WTM 2012: Euro-TM Workshop on Transactional Memory (co-located
 Konrad Siek, Paweł T. Wojciechowski.  
 **Statically Computing Upper Bounds on Object Calls for Pessimistic Concurrency Control** (extended abstract).  
 In Proceedings of EC :math:`^2` 2010: Workshop on Exploiting Concurrency Efficiently and Correctly (co-located with CAV 2010). July 2010.  
-[[PDF](_pub/sw10.pdf)]
+[[PDF](pub/sw10.pdf)]
 
-<br/>
+<hr/>
 
 ## Technical reports
 
 Jan Baranowki, Konrad Siek, Paweł T. Wojciechowski.  
 **Analiza Programów Wzorcowych dla Rozproszonej Pamieci Transakcyjnej**.  
 Raport RB-3/15. Instytut Informatyki Politechniki Poznańskiej.  
-[[PDF](_pub/rb-3-15.pdf`)]
+[[PDF](pub/rb-3-15.pdf`)]
 
 <hr/>
 
 Martin Witczak, Konrad Siek.  
 **Rozproszony System Zarządzania Odtwarzaniem Mediów w Oparciu o Pesymistyczną Pamięć Transakcyjną**.  
 Raport RB-4/15. Instytut Informatyki Politechniki Poznańskiej.  
-[[PDF](_pub/rb-4-15.pdf`)]
+[[PDF](pub/rb-4-15.pdf`)]

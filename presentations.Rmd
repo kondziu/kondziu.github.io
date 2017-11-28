@@ -6,102 +6,188 @@ output: html_document
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
+<br/>
+
 ## Thesis defense
 
 Konrad Siek.  
 **Distributed Pessimistic Transactional Memory: Algorithms and Properties**.  
-Poznań University of Technology. January 4, 2017. Poznań, Poland. 
-[[PDF slides](_talks/dissertation.pdf)]
+Poznań University of Technology. January 4, 2017. Poznań, Poland.  
+[[PDF slides](talks/dissertation.pdf)]
+
+<hr/>
 
 ## Conferences
 
 Paweł T. Wojciechowski, Konrad Siek.  
 **Atomic RMI 2: Distributed Transactions for Java**.  
-AGERE'16. October 30, 2016. Amsterdam, Netherlands.
-[[PDF slides](_talks/agere16.pdf)]
+AGERE'16. October 30, 2016. Amsterdam, Netherlands.  
+[[PDF slides](talks/agere16.pdf)]
+
+<hr/>
 
 Konrad Siek, Paweł T. Wojciechowski.  
 **Brief Announcement: Relaxing Opacity in Pessimistic Transactional Memory**.  
-DISC'14. October 12-15, 2014. Austin, TX, USA.
-[[PDF slides](_talks/disc14-talk.pdf), 
+DISC'14. October 12-15, 2014. Austin, TX, USA.  
+[[PDF slides](talks/disc14-talk.pdf), 
  [OGG](https://drive.google.com/file/d/0BxWQ0jCVrZPjME9KRVZwMjFtSVk/view?usp=sharing),
  [MP3](https://drive.google.com/file/d/0BxWQ0jCVrZPjZTJSSWZrUkxBSzg/view?usp=sharing)]
 
 Konrad Siek, Paweł T. Wojciechowski.  
 **Zen and the Art of Concurrency Control: An Exploration of TM Safety Property Space with Early Release in Mind**.  
-WTTM'14. July 14, 2014. Paris, France.
-[[PDF slides](_talks/wttm14-talk.pdf), 
+WTTM'14. July 14, 2014. Paris, France.  
+[[PDF slides](talks/wttm14-talk.pdf), 
  [OGG](https://drive.google.com/file/d/0BxWQ0jCVrZPjazVoSTVkdjBXdjg/edit?usp=sharing), 
  [MP3](https://drive.google.com/file/d/0BxWQ0jCVrZPjTzlJeVMtazRfaXM/edit?usp=sharing)]
+ 
+<hr/>
 
 Konrad Siek, Paweł T. Wojciechowski.  
 **Atomic RMI: a Distributed Transactional Memory Framework**.  
-HLPP'14. July 3-4, 2014. Amsterdam, Neatherlands.
-[[PDF slides](_talks/hlpp14-talk.pdf), 
+HLPP'14. July 3-4, 2014. Amsterdam, Neatherlands.  
+[[PDF slides](talks/hlpp14-talk.pdf), 
  [OGG](https://drive.google.com/file/d/0BxWQ0jCVrZPjZHN2X2U1M0hMUDg/edit?usp=sharing), 
  [MP3](https://drive.google.com/file/d/0BxWQ0jCVrZPjd2JZQ1JTQU9sMkE/edit?usp=sharing)]
 
+<hr/>
+
 Paweł T. Wojciechowski, Konrad Siek.  
 **Having Your Cake and Eating it Too: Combining Strong and Eventual Consistency**.  
-PaPEC'14. April 13, 2014. Amsterdam, Neatherlands. 
-[[PDF slides](_talks/papec14-talk.pdf)]
+PaPEC'14. April 13, 2014. Amsterdam, Neatherlands.  
+[[PDF slides](talks/papec14-talk.pdf)]
+
+<hr/>
 
 Konrad Siek, Paweł T. Wojciechowski.  
 **Towards a Fully-Articulated Pessimistic Distributed Transactional Memory**.  
-SPAA'13. July 23-25, 2013. Montréal, Canada. 
-[[PDF slides](_talks/spaa13-talk.pdf)]
+SPAA'13. July 23-25, 2013. Montréal, Canada.  
+[[PDF slides](talks/spaa13-talk.pdf)]
+
+<hr/>
 
 Paweł T. Wojciechowski, Konrad Siek.  
 **Rollbacks in Pessimistic Distributed TM**.  
-TRANSFORM Summer School on Research Directions in Distributed Computing. June 10-14, 2013. Heraklion, Greece.
-[[PDF slides](_talks/srdc13-talk.pdf)]
+TRANSFORM Summer School on Research Directions in Distributed Computing. June 10-14, 2013. Heraklion, Greece.  
+[[PDF slides](talks/srdc13-talk.pdf)]
+
+<hr/>
 
 Konrad Siek, Paweł T. Wojciechowski.   
 **A Formal Design of a Tool for Static Analysis of Upper Bounds on Object Calls in Java**.   
-FMICS'12. August 27-28, 2012. Paris, France. 
-[[PDF slides](_talks/fmics12.pdf)]
+FMICS'12. August 27-28, 2012. Paris, France.   
+[[PDF slides](talks/fmics12.pdf)]
+
+<hr/>
 
 Konrad Siek, Paweł T. Wojciechowski.   
 **Statically Computing Upper Bounds on Object Calls for Pessimistic Concurrency Control**.   
-EC². July 20-21, 2010. Edinburgh, UK. 
-[[PDF slides](_talks/ec2.pdf)]
+EC². July 20-21, 2010. Edinburgh, UK.  
+[[PDF slides](talks/ec2.pdf)]
+
+<hr/>
 
 ## Seminars
 
 Konrad Siek.  
 **Rozproszona Pesymistyczna Pamięć Transakcyjna: Algorytmy i Własności**.  
-FC PUT. February 10, 2015. Poznań, Poland.
-[[PDF slides](_talks/otwarcie.pdf)]
+(Distributed pessimistic transactional memory: Algorithms and properties).  
+FC at PUT. February 10, 2015. Poznań, Poland.  
+[[PDF slides](talks/otwarcie.pdf)]  
+
+<hr/>
 
 Konrad Siek, Paweł T. Wojciechowski.  
 **Nowe Algorytmy i Własności do Pesymistycznego Sterowania Współbieżnością w Rozproszonej Pamięci Transakcyjnej**.  
-Institute of CS, PUT. January 13, 2015. Poznań, Poland.
-[[PDF slides](_talks/put15.pdf)]
+(New algorithms and properties for pessimistic concurrency control in distributed transactional memory.)  
+Institute of CS at PUT. January 13, 2015. Poznań, Poland.  
+[[PDF slides](talks/put15.pdf)]  
+
+<hr/>
 
 Konrad Siek, Paweł T. Wojciechowski.  
 **Combining Strong and Eventual Consistency in Distributed TM**.  
-LPD EPFL. September 10, 2014. Lausanne, Switzerland.
-[[PDF slides](_talks/epfl14.pdf)]
+LPD at EPFL. September 10, 2014. Lausanne, Switzerland.  
+[[PDF slides](talks/epfl14.pdf)]  
+
+<hr/>
 
 Konrad Siek, Paweł T. Wojciechowski.  
 **Having Your Cake and Eating it Too: Combining Strong and Eventual Consistency**.  
-DSG PUT. May 2014. Poznań, Poland.
-[[PDF slides](_talks/put14a.pdf)]
+DSG at PUT. May 2014. Poznań, Poland.  
+[[PDF slides](talks/put14a.pdf)]  
+
+<hr/>
 
 Konrad Siek, Paweł T. Wojciechowski.  
 **Safety of Pessimistic Distributed Transactional Memory**.  
-DSG PUT. November 19, 2013. Poznań, Poland.
-[[PDF slides](_talks/put13b.pdf)]
+DSG at PUT. November 19, 2013. Poznań, Poland.  
+[[PDF slides](talks/put13b.pdf)]  
+
+<hr/>
 
 Konrad Siek, Paweł T. Wojciechowski.  
-**Towards a Fully-articulated Pessimistic Distributed Transacitonal Memory**.  
-DSG PUT. May 14, 2013. Poznań, Poland.
-[[PDF slides](_talks/put13a.pdf)]
+**Towards a Fully-articulated Pessimistic Distributed Transactional Memory**.  
+DSG at PUT. May 14, 2013. Poznań, Poland.  
+[[PDF slides](talks/put13a.pdf)]
 
-<!--## For students
+<hr/>
+
+## For students
+
+Konrad Siek.  
+**Model aktorów.**  
+(The actor model.)  
+KN SKiSR at PUT. April 26, 2016. Poznań, Poland.   
+[[HTML slides](http://www.cs.put.poznan.pl/ksiek/talks/actors/), 
+ [Event website](https://dsg.cs.put.poznan.pl/wiki/talks/model-aktorow)]
+
+<hr/>
+
+Konrad Siek.  
+**Programowanie w Pythonie – warsztat.**  
+(Programming in Python – a workshop.)  
+XI Poznańska Impreza Wolnego Oprogramowania. October 10, 2015. Poznań, Poland.  
+[[Event website](http://piwo.informatyka.org/2015/programowanie-w-pythonie/)]
+
+<hr/>
 
 Konrad Siek.  
 **Bezbolesne programowanie współbieżne.**  
-KN SKiSR. May 9 2012. 
-[[PDF slides](_talks/painless-concurency.pdf)]-->
+(Painless concurrent programming.)  
+KN SKiSR at PUT. March 26, 2014. Poznań, Poland.    
+[[PDF slides](talks/painless-concurency-2.pdf), 
+ [Event website](https://dsg.cs.put.poznan.pl/wiki/talks/bezbolesne-programowanie-wspolbiezne-2)]
+
+<hr/>
+
+Konrad Siek, Jakub Szwachła, Jakub Woźniak.
+**Warsztat Python: Wprowadzenie**.  
+(Python workshop: Introduction).  
+KN SKiSR at PUT. May 15 2013. Poznań, Poland.   
+[[Event website](https://dsg.cs.put.poznan.pl/wiki/pythonwarsztat),
+ [YouTube pt. 1](http://www.youtube.com/watch?v=RtUl8OQivS0),
+ [2](http://www.youtube.com/watch?v=8HpJsOMfRic),
+ [3](http://www.youtube.com/watch?v=sdsBc4Nzq_k),
+ [4](http://youtu.be/Bi4kRfe2KMk),
+ [5](http://www.youtube.com/watch?v=oUU6rEN_8eQ)]
+
+<hr/>
+
+Konrad Siek.
+**Programowanie funkcyjne w Pythonie.**  
+(Functional programming in Python.)  
+KN SKiSR at PUT. March 4, 2013. Poznań, Poland.    
+[[PDF slides](talks/programowanie-funkcyjne-w-pythonie.pdf), 
+ [Event website](https://dsg.cs.put.poznan.pl/wiki/talks/programowanie-funkcyjne-w-pythonie),
+ [YouTube pt. 1](http://www.youtube.com/watch?v=HCuPuTMzjZ4),
+ [2](http://www.youtube.com/watch?v=zr4agO9yQ1A)]
+ 
+<hr/>
+
+Konrad Siek.  
+**Bezbolesne programowanie współbieżne.**  
+(Painless concurrent programing.)   
+KN SKiSR at PUT. May 9 2012. Poznań, Poland.   
+[[PDF slides](talks/painless-concurency.pdf), 
+ [Event website](https://dsg.cs.put.poznan.pl/wiki/talks/bezbolesne-programowanie-wspolbiezne)]
 
