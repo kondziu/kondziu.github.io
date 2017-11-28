@@ -2,6 +2,10 @@
 output: html_document
 ---
 
+<style>
+img[alt$="photo"] { width: 250px; float: right; vertical-align: top; padding-left: 15px;}
+</style>
+
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 ```
@@ -12,7 +16,7 @@ knitr::opts_chunk$set(echo = FALSE)
 
 <hr/>
 
-Probable physical locations: 
+Probable physical locations: ![photo](img/cvut-night.jpg)
 
   - A 1254, Fakulta Stavební, CTU in Prague
   - 330 WVH, Northeastern
@@ -23,10 +27,11 @@ Profiles:
 
   - [LinkedIn](https://pl.linkedin.com/in/konrad-siek-125b5a90)
   - [ResearchGate](https://www.researchgate.net/profile/Konrad_Siek)
+  - [GitHub](https://github.com/kondziu)
 
 <hr/>  
   
-Websites:
+Websites: 
 
   - [www.cs.put.poznan.pl/ksiek/](http://www.cs.put.poznan.pl/ksiek/)
   - [grittyscripts.blogspot.com](http://grittyscripts.blogspot.com/)
