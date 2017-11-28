@@ -49,7 +49,7 @@ Konrad Siek, Paweł T. Wojciechowski.
 **A Formal Design of a Tool for Static Analysis of Upper Bounds on Object Calls in Java**.  
 In Proceedings of FMICS 2012: the 17th International Workshop on Formal Methods for Industrial Critical Systems (co-located with FM 2012).  
 Lecture Notes in Computer Science Volume 7437, pp 192–206. August 2012.  
-[[Springer](https://link.springer.com/chapter/10.1007/978-3-642-32469-7_13), [PDF](pub/fmics12.pdf>)]
+[[Springer](https://link.springer.com/chapter/10.1007/978-3-642-32469-7_13), [PDF](pub/fmics12.pdf)]
 
 <br/>
 
@@ -117,11 +117,11 @@ In Proceedings of EC :math:`^2` 2010: Workshop on Exploiting Concurrency Efficie
 Jan Baranowki, Konrad Siek, Paweł T. Wojciechowski.  
 **Analiza Programów Wzorcowych dla Rozproszonej Pamieci Transakcyjnej**.  
 Raport RB-3/15. Instytut Informatyki Politechniki Poznańskiej.  
-[[PDF](pub/rb-3-15.pdf`)]
+[[PDF](pub/rb-3-15.pdf)]
 
 <hr/>
 
 Martin Witczak, Konrad Siek.  
 **Rozproszony System Zarządzania Odtwarzaniem Mediów w Oparciu o Pesymistyczną Pamięć Transakcyjną**.  
 Raport RB-4/15. Instytut Informatyki Politechniki Poznańskiej.  
-[[PDF](pub/rb-4-15.pdf`)]
+[[PDF](pub/rb-4-15.pdf)]

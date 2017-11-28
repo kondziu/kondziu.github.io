@@ -53,5 +53,5 @@ Research assistant (currently on sabbatical)
 ![pin](img/put.png) 
 PhD from [Poznań University of Technology](http://www.put.poznan.pl)  
 Distributed Pessimistic Transactional Memory:   
-Algorithms and Properties ([pdf](_pub/dissertation.pdf), [tex](_pub/dissertation.tar.gz))  
+Algorithms and Properties ([pdf](pub/dissertation.pdf), [tex](pub/dissertation.tar.gz))  
 Advisor: [Paweł T. Wojciechowski](http://www.cs.put.poznan.pl/pawelw)  
