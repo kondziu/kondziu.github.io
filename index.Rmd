@@ -13,7 +13,7 @@ knitr::opts_chunk$set(echo=FALSE)
 ```
 
 ![pic](img/photo2.jpg)
-<a href="mailto:siekkonrⓐcvut.cz">siekkonrⓐcvut.cz</a>  
+<a href="mailto:siekkonr🐒cvut.cz">siekkonr🐒cvut.cz</a>  
 
 I currently do research on the [R language](http://www.r-project.org) and its use of laziness.  
 
