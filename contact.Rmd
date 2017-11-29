@@ -12,11 +12,18 @@ knitr::opts_chunk$set(echo = FALSE)
 
 <br/>
 
-**Konrad Siek**  <<a href="mailto:siekkonrⓐcvut.cz">siekkonrⓐcvut.cz</a>>
+**Konrad Siek**  
 
 <hr/>
 
-Probable physical locations: ![photo](img/cvut-night.jpg)
+Emails: ![photo](img/cvut-night.jpg)
+
+  - <a href="mailto:siekkonr🐒fit.cvut.cz">siekkonr🐒fit.cvut.cz</a>
+  - <a href="mailto:konrad.siek🐒cs.put.edu.pl">konrad.siek🐒cs.put.edu.pl</a>
+
+<hr/>
+
+Probable physical locations: 
 
   - A 1254, Fakulta Stavební, CTU in Prague
   - 330 WVH, Northeastern

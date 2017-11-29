@@ -13,7 +13,7 @@ Konrad Siek (advisor: Paweł T. Wojciechowski).
 **Distributed Pessimistic Transactional Memory: Algorithms and Properties** (doctoral dissertation).  
 Faculty of Computing Science at Poznań University of Technology.  
 Submitted June 2016, defended January 2017.  
-[[PDF](pub/dissertation.pdf), [TeX](pub/dissertation.tar.gz), [PUT](https://pp-hip.pfsl.poznan.pl/ipac20/ipac.jsp?session=151C8173887J1.41469&profile=put-library&uri=link=3100007~!756389~!3100001~!3100002&aspect=basic_search&menu=search&ri=8&source=~!bpptest&term=Distributed+Pessimistic+Transactional+Memory%3A+Algorithms+and+Properties+%2F&index=ALTITLE)]
+[[PDF](pub/dissertation.pdf), [TeX](pub/dissertation.tar.gz), [PUT library](https://pp-hip.pfsl.poznan.pl/ipac20/ipac.jsp?session=151C8173887J1.41469&profile=put-library&uri=link=3100007~!756389~!3100001~!3100002&aspect=basic_search&menu=search&ri=8&source=~!bpptest&term=Distributed+Pessimistic+Transactional+Memory%3A+Algorithms+and+Properties+%2F&index=ALTITLE)]
 
 <hr/>
 

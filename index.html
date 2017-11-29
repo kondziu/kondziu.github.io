@@ -209,11 +209,29 @@ img[alt$="pin"]   { width: 66px; padding: 5px; float: right; }
 img[alt$="pic"] { width: 150px; float: right; vertical-align: top; padding-left: 15px;}
 </style>
 <p><img src="img/photo2.jpg" alt="pic" /> <a href="mailto:siekkonr🐒fit.cvut.cz">siekkonr🐒fit.cvut.cz</a></p>
-<p>I currently do research on the <a href="http://www.r-project.org">R language</a> and its use of laziness.</p>
-<p>I am interested in distributed systems, programming languages, and their intersection. In particular, I’m interested in transactional memory, concurrency, distributed systems, and functional programming.</p>
-<p>My PhD thesis explored the safety and parallelism trade-off in distributed transactional memory.</p>
-<p>I seek difficult ways to solve simple problems and sometimes vice versa. <br/> <br/></p>
+<p>I am interested in distributed systems and concurrency, especially transactional memory, which was the topic of my doctoral dissertation. I am also really interested in programming language research and I am in the process of transitioning towards that.</p>
+<p>I currently do research on the <a href="http://www.r-project.org">R language</a> and its use of promises and laziness.</p>
+<p>I like hamsters and bamboo swords and I seek difficult ways to solve simple problems.</p>
 <hr/>
+<div id="research-some-of-it" class="section level2">
+<h2>Research <small>(some of it)</small></h2>
+<!--In January 2017 I defended my **PhD thesis** at Poznań University of Technology, advised by [Paweł T. Wojciechowski](http://www.cs.put.poznan.pl/pawelw). It explored the idea of using early release to improve the performance of pessimistic transactional memory.-->
+<p><img src="img/put.png" alt="pin" /> Konrad Siek (advisor: Paweł T. Wojciechowski).<br />
+<strong>Distributed Pessimistic Transactional Memory: Algorithms and Properties</strong> (doctoral dissertation).<br />
+Faculty of Computing Science at Poznań University of Technology. Defended January 2017. [<a href="pub/dissertation.pdf">PDF</a>] <!--, [TeX](pub/dissertation.tar.gz), [PUT library](https://pp-hip.pfsl.poznan.pl/ipac20/ipac.jsp?session=151C8173887J1.41469&profile=put-library&uri=link=3100007~!756389~!3100001~!3100002&aspect=basic_search&menu=search&ri=8&source=~!bpptest&term=Distributed+Pessimistic+Transactional+Memory%3A+Algorithms+and+Properties+%2F&index=ALTITLE)]--></p>
+<p><strong>Abstract:</strong> We use pessimistic DTM to make transactions with irrevocable side effects safe. We use early release to make pessimistic DTM outperform state-of-the-art optimistic DTM. We also introduce a safety property called last-use opacity that allows early release but gives strong guarantees.</p>
+<hr/>
+<p><img src="img/put.png" alt="pin" /> Paweł Kobyliński, Konrad Siek, Jan Baranowski, Paweł T. Wojciechowski.<br />
+<strong>Helenos: A Realistic Benchmark for Distributed Transactional Memory</strong>.<br />
+Journal of Software: Practice and Experience. October 2017. [<a href="http://onlinelibrary.wiley.com/doi/10.1002/spe.2548/full">Wiley</a>]</p>
+<p><strong>Abstract:</strong> We introduce a parameterizable benchmark for distributed TM based on the Facebook inbox application described in the Cassandra paper (Lakshman, Malik 2010). We show an example evaluation of HyFlow2 and Atomic RMI.</p>
+<hr/>
+<p><img src="img/put.png" alt="pin" /> Paweł T. Wojciechowski, Konrad Siek.<br />
+<strong>Having Your Cake and Eating it Too: Combining Strong and Eventual Consistency</strong>.<br />
+PaPEC’14. [<a href="pub/papec14.pdf">PDF</a>]</p>
+<p><strong>Abstract:</strong> We propose a distributed TM system that allows strongly and weakly consistent transactions to co-exist. Weak transactions execute twice: a strong and a weak version. The result of the strong one eventually overwrites the result of the weak one.</p>
+<hr/>
+</div>
 <div id="positions" class="section level2">
 <h2>Positions</h2>
 <p><img src="img/cvut.jpg" alt="pin" /> <img src="img/prl-prg-small.png" alt="pin" /> Post-doc research assistant<br />
@@ -226,13 +244,16 @@ img[alt$="pic"] { width: 150px; float: right; vertical-align: top; padding-left:
 <a href="http://dsg.cs.put.poznan.pl">DSG</a> at <a href="http://www.put.poznan.pl">Poznań University of Technology</a><br />
 <br/></p>
 <hr/>
-</div>
-<div id="thesis" class="section level2">
-<h2>Thesis</h2>
-<p><img src="img/put.png" alt="pin" /> PhD from <a href="http://www.put.poznan.pl">Poznań University of Technology</a><br />
-Distributed Pessimistic Transactional Memory:<br />
-Algorithms and Properties (<a href="pub/dissertation.pdf">pdf</a>, <a href="pub/dissertation.tar.gz">tex</a>)<br />
-Advisor: <a href="http://www.cs.put.poznan.pl/pawelw">Paweł T. Wojciechowski</a></p>
+<!--
+## Thesis
+
+
+![pin](img/put.png) 
+PhD from [Poznań University of Technology](http://www.put.poznan.pl)  
+Distributed Pessimistic Transactional Memory:   
+Algorithms and Properties ([pdf](pub/dissertation.pdf), [tex](pub/dissertation.tar.gz))  
+Advisor: [Paweł T. Wojciechowski](http://www.cs.put.poznan.pl/pawelw)  
+-->
 </div>
 
 
