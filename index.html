@@ -20,8 +20,8 @@
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
-<link href="site_libs/highlightjs-1.1/default.css" rel="stylesheet" />
-<script src="site_libs/highlightjs-1.1/highlight.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
 
 <style type="text/css">code{white-space: pre;}</style>
 <style type="text/css">
@@ -30,10 +30,12 @@
   }
 </style>
 <script type="text/javascript">
-if (window.hljs && document.readyState && document.readyState === "complete") {
-   window.setTimeout(function() {
-      hljs.initHighlighting();
-   }, 0);
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
 }
 </script>
 
@@ -205,7 +207,7 @@ $(document).ready(function () {
 
 
 <style>
-img[alt$="pin"]   { width: 66px; padding: 5px; float: right; }
+img[alt$="pin"] { width: 66px; padding: 5px; float: right; }
 img[alt$="pic"] { width: 150px; float: right; vertical-align: top; padding-left: 15px;}
 </style>
 <p><img src="img/photo2.jpg" alt="pic" /> <a href="mailto:siekkonr🐒fit.cvut.cz">siekkonr🐒fit.cvut.cz</a></p>
@@ -223,7 +225,7 @@ Faculty of Computing Science at Poznań University of Technology. Defended Janua
 <hr/>
 <p><img src="img/put.png" alt="pin" /> Paweł Kobyliński, Konrad Siek, Jan Baranowski, Paweł T. Wojciechowski.<br />
 <strong>Helenos: A Realistic Benchmark for Distributed Transactional Memory</strong>.<br />
-Journal of Software: Practice and Experience. October 2017. [<a href="http://onlinelibrary.wiley.com/doi/10.1002/spe.2548/full">Wiley</a>]</p>
+Journal of Software: Practice and Experience. , volume 48, issue 3. March 2018.<a href="http://onlinelibrary.wiley.com/doi/10.1002/spe.2548/full">Wiley</a>]</p>
 <p><strong>Abstract:</strong> We introduce a parameterizable benchmark for distributed TM based on the Facebook inbox application described in the Cassandra paper (Lakshman, Malik 2010). We show an example evaluation of HyFlow2 and Atomic RMI.</p>
 <hr/>
 <p><img src="img/put.png" alt="pin" /> Paweł T. Wojciechowski, Konrad Siek.<br />

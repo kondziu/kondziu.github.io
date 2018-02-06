@@ -20,8 +20,8 @@
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
-<link href="site_libs/highlightjs-1.1/default.css" rel="stylesheet" />
-<script src="site_libs/highlightjs-1.1/highlight.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
 
 <style type="text/css">code{white-space: pre;}</style>
 <style type="text/css">
@@ -30,10 +30,12 @@
   }
 </style>
 <script type="text/javascript">
-if (window.hljs && document.readyState && document.readyState === "complete") {
-   window.setTimeout(function() {
-      hljs.initHighlighting();
-   }, 0);
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
 }
 </script>
 
@@ -210,14 +212,15 @@ $(document).ready(function () {
 <strong>Distributed Pessimistic Transactional Memory: Algorithms and Properties</strong> (doctoral dissertation).<br />
 Faculty of Computing Science at Poznań University of Technology.<br />
 Submitted June 2016, defended January 2017.<br />
-[<a href="pub/dissertation.pdf">PDF</a>, <a href="pub/dissertation.tar.gz">TeX</a>, <a href="https://pp-hip.pfsl.poznan.pl/ipac20/ipac.jsp?session=151C8173887J1.41469&amp;profile=put-library&amp;uri=link=3100007~!756389~!3100001~!3100002&amp;aspect=basic_search&amp;menu=search&amp;ri=8&amp;source=~!bpptest&amp;term=Distributed+Pessimistic+Transactional+Memory%3A+Algorithms+and+Properties+%2F&amp;index=ALTITLE">PUT</a>]</p>
+[<a href="pub/dissertation.pdf">PDF</a>, <a href="pub/dissertation.tar.gz">TeX</a>, <a href="https://pp-hip.pfsl.poznan.pl/ipac20/ipac.jsp?session=151C8173887J1.41469&amp;profile=put-library&amp;uri=link=3100007~!756389~!3100001~!3100002&amp;aspect=basic_search&amp;menu=search&amp;ri=8&amp;source=~!bpptest&amp;term=Distributed+Pessimistic+Transactional+Memory%3A+Algorithms+and+Properties+%2F&amp;index=ALTITLE">PUT library</a>]</p>
 <hr/>
 </div>
 <div id="papers" class="section level2">
 <h2>Papers</h2>
 <p>Paweł Kobyliński, Konrad Siek, Jan Baranowski, Paweł T. Wojciechowski.<br />
 <strong>Helenos: A Realistic Benchmark for Distributed Transactional Memory</strong>.<br />
-Journal of Software: Practice and Experience. Volume TBA, issue TBA. October 2017.<br />
+Journal of Software: Practice and Experience. Volume 48, issue 3.<br />
+March 2018.<br />
 [<a href="http://onlinelibrary.wiley.com/doi/10.1002/spe.2548/full">Wiley</a>]</p>
 <hr/>
 <p>Konrad Siek, Paweł T. Wojciechowski.<br />

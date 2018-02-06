@@ -19,7 +19,7 @@ Co-instructor (w/ Jan Vitek). Fall 2017.
 ## Poznań University of Technology
 
 **Podstawy Informatyki**. 
-(Basic IT.) 
+(IT fundamentals.) 
 Lab instructor. Winter 2009-2017. 
 [[Website](http://www.cs.put.poznan.pl/ksiek/pi/pi.html)]
 
