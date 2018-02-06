@@ -42,7 +42,7 @@ We use pessimistic DTM to make transactions with irrevocable side effects safe. 
 ![pin](img/put.png)
 Paweł Kobyliński, Konrad Siek, Jan Baranowski, Paweł T. Wojciechowski.  
 **Helenos: A Realistic Benchmark for Distributed Transactional Memory**.  
-Journal of Software: Practice and Experience. , volume 48, issue 3. March 2018.[Wiley](http://onlinelibrary.wiley.com/doi/10.1002/spe.2548/full)]
+Journal of Software: Practice and Experience. volume 48, issue 3. March 2018.[Wiley](http://onlinelibrary.wiley.com/doi/10.1002/spe.2548/full)]
 
 **Abstract:**
 We introduce a parameterizable benchmark for distributed TM based on the Facebook inbox application described in the Cassandra paper (Lakshman, Malik 2010). We show an example evaluation of HyFlow2 and Atomic RMI.
