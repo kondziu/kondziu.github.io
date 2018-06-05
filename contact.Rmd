@@ -25,7 +25,7 @@ Emails: ![photo](img/cvut-night.jpg)
 
 Probable physical locations: 
 
-  - A 1254, Fakulta Stavební, CTU in Prague
+  - A 1252, Fakulta Stavební, CTU in Prague
   - 330 WVH, Northeastern
   
 <hr/>  
@@ -35,6 +35,8 @@ Profiles:
   - [LinkedIn](https://pl.linkedin.com/in/konrad-siek-125b5a90)
   - [ResearchGate](https://www.researchgate.net/profile/Konrad_Siek)
   - [GitHub](https://github.com/kondziu)
+  - [GitLab](https://gitlab.com/kondziu)
+  - [anime-planet](https://www.anime-planet.com/users/kondziu)
 
 <hr/>  
   
