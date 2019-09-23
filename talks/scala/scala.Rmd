@@ -152,6 +152,19 @@ x + y
 x.+(y)
 ```
 
+## Infix notation
+
+```scala
+val s = "something something spaceship"
+s.split(" ")
+s split(" ")
+s split " "
+```
+
+Only use with **arity 1 pure functions**. Strongly encouraged if the argument is a function. 
+
+([Scala style guide](http://docs.scala-lang.org/style/method-invocation.html))
+
 ## Omitting parentheses
 
 ```scala
@@ -165,18 +178,11 @@ Only use with **arity 0 pure functions**.
 
 ([Scala style guide](http://docs.scala-lang.org/style/method-invocation.html))
 
-## Infix notation
+## Unified types
 
-```scala
-val s = "something something spaceship"
-s.split(" ")
-s split(" ")
-s split " "
-```
+![Unified types](unified-types-diagram.svg){width=800px}
 
-Only use with **arity 1 pure functions**. Strongly encouraged if the argument is a function. 
-
-([Scala style guide](http://docs.scala-lang.org/style/method-invocation.html))
+## Casting
 
 ## Functions (lambdas)
 
