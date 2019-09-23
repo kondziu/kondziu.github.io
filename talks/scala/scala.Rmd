@@ -1,0 +1,306 @@
+---
+title: "Scala"
+subtitle: "An abrupt introduction"
+author: "Konrad Siek"
+date: "September, 2019"
+output: 
+  ioslides_presentation:
+    footer: "BI(E)-OOP 2019"
+    css: styles.css
+highlight: pygments
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Course information
+
+**BIE-OOP**  
+Object Oriented Programming  
+
+**Course website**: https://courses.fit.cvut.cz/BI-OOP/
+
+## Contact information
+
+<div style="float: left; width: 75%;">
+**Ing. Konrad Siek, PhD.**  
+Programming Research Lab  
+Faculty of Information Technology
+
+**Office**: Thákurova 7, A-1252  
+**Email**: siekkonr@fit.cvut.cz  
+**My website**: https://kondziu.github.io/  
+
+**Office hours**: Wednesdays 10:00-11:00
+
+</div>
+<div style="float: right; width: 25%;">
+
+![Real picture](hamstur.png){width=200px, height=200px}
+
+</div>
+
+## What is Scala?
+
+> Scala combines **object-oriented** and **functional programming** in one **concise**, **high-level** language. Scala's **static types** help avoid bugs in complex applications, and its **JVM** and **JavaScript** runtimes let you build **high-performance** systems with easy access to huge **ecosystems of libraries**.
+
+[**scala-lang.org**](https://www.scala-lang.org)
+
+## What is Scala?
+
+Scala is a modern **multi-paradigm programming language** designed to express common programming patterns in a **concise**, **elegant**, and **type-safe way**. It smoothly integrates features of **object-oriented** and **functional languages**.
+
+[**Tour of Scala**](https://docs.scala-lang.org/tour/tour-of-scala.html).
+
+## What is Scala?
+
+2003 - A drunken **Martin Odersky** sees a Reese's Peanut Butter Cup ad featuring somebody's peanut butter getting on somebody else's chocolate and has an idea. He creates Scala, a language that **unifies constructs** from both **object oriented** and **functional languages**. This pisses off both groups and each promptly declares jihad.
+
+James Iry. [**A Brief, Incomplete, and Mostly Wrong History of Programming Languages**](http://james-iry.blogspot.com/2009/05/brief-incomplete-and-mostly-wrong.html). 2009.
+
+## What is Scala?
+
+![A visual guide to the Scala language](bosch.jpg "A visual guide to the Scala language"){width=500px}
+
+Hieronymus Bosch. [**A visual guide to the Scala language**](https://classicprogrammerpaintings.com/post/142321815809/hieronymus-bosch-a-visual-guide-to-the-scala). Oil on oak panels, 1490-1510.
+
+ The left panel shows the **functional features**, the main one describes the **type system**, and the right the **object oriented parts**.
+
+## Expressions
+
+<div style="float: left; width: 40%;">
+
+```scala
+2 + 3
+2 - 3 
+2 * 3
+2 / 3
+2 % 3
+
+2 ^ 3
+2 & 3
+2 | 3
+
+2 >> 3
+2 << 3
+```
+
+</div>
+<div style="float: right; width: 50%;">
+
+```scala
+"ahoj"
+"ahoj" + 2
+"ahoj" * 2
+
+"ahoj" + " " + "světe!"
+```
+
+```scala
+1 == 2
+1 >= 2
+1 <= 2
+```
+
+```scala
+"a" -> 2
+```
+
+</div>
+
+## Values
+
+```scala
+val x = 5
+val s = "spaceship"
+val y : Int = 0
+```
+
+## Variables
+
+```scala
+var vx = 5
+var vs = "spaceship"
+var vy : Int = 0
+```
+
+```scala
+x = 42
+vx = 42
+```
+
+## Default values
+
+```scala
+var x : Int = _
+var s : String = _
+```
+
+## Everything is an object
+
+```scala
+5.toString()
+```
+
+## Operators are methods
+
+```scala
+val x, y = 2
+
+x + y
+x.+(y)
+```
+
+## Omitting parentheses
+
+```scala
+val x = 2
+x.toString()
+x.toString
+x toString
+```
+
+Only use with **arity 0 pure functions**.
+
+([Scala style guide](http://docs.scala-lang.org/style/method-invocation.html))
+
+## Infix notation
+
+```scala
+val s = "something something spaceship"
+s.split(" ")
+s split(" ")
+s split " "
+```
+
+Only use with **arity 1 pure functions**. Strongly encouraged if the argument is a function. 
+
+([Scala style guide](http://docs.scala-lang.org/style/method-invocation.html))
+
+## Functions (lambdas)
+
+```scala
+(x: Int) => x + 1
+```
+
+```scala
+val addOne = (x: Int) => x + 1
+val ahoj = () => "ahoj"
+val ahoj = () => println("ahoj")
+```
+
+## Functions (lambdas)
+
+```scala
+(x: Int) => x + 1
+```
+
+```scala
+val addOne = (x: Int) => x + 1
+val ahoj: () => String = () => "ahoj"
+val ahoj: () => Unit = () => println("ahoj")
+```
+
+## Function arguments
+
+```scala
+val sumZero = () => 0
+val sumOne = (x:Int) => x
+val sumTwo = (x:Int, y:Int) => x + y
+val sumThree = (x:Int, y:Int, z:Int) => x + y + z
+/* ... */
+val sumTwentyTwo = (a:Int, b:Int, c:Int, d:Int, e:Int, f:Int, 
+                    g:Int, h:Int, i:Int, j:Int, k:Int, l:Int, 
+                    m:Int, n:Int, o:Int, p:Int, q:Int, r:Int, 
+                    s:Int, t:Int, u:Int, v:Int) => 
+                    a + b + c + d + e + f + g + h + i + j + 
+                    k + l + m + n + o + p + q + r + s + t + 
+                    u + v
+```
+
+## Functions are objects
+
+
+
+## Blocks
+
+```scala
+{ 2 + 2 }
+{ val x = 2; x }
+{ val x = 2; val y = 2; x + y }
+{ println("x") }
+```
+
+```scala
+val xy = { 
+  val x = 2
+  val y = 2
+  x + y
+}
+```
+
+```scala
+val f: (Int, Int) => String = (n:Int, d:Int) => 
+  { val w = n / d; val m = n % d; w + " * " + d + " + " + m }
+```
+
+## Methods
+
+```scala
+def addOne(x: Int): Int = {
+    return x + 1
+}
+```
+
+## Methods (syntax variants)
+
+```scala
+def addOne(x: Int): Int = {
+    return x + 1
+}
+```
+
+```scala
+def addOne(x: Int) = {
+    x + 1
+}
+```
+
+```scala
+def addOne(x: Int) {x + 1}       // → unit, deprecated!
+```
+
+```scala
+def addOne(x: Int) = x + 1
+```
+
+## Default arguments
+
+```scala
+def add(x: Int, y: Int = 1) = { x + y }
+
+add(1, 1)
+add(1)
+```
+
+## Argument groups
+
+```scala
+def add(x: Int)(y: Int) = { x + y }
+
+add(1)(1)
+val addOne = add(1)
+```
+
+## Nested methods
+
+```scala
+def outer(x: Int) = {
+    def inner(y: Int) = {
+        y + x
+    }
+    inner(x)
+}
+```
+

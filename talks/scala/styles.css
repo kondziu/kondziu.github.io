@@ -1,0 +1,23 @@
+/* unvisited link */
+a:link {
+  color: rgb(121, 121, 121);
+  border-bottom-color: rgb(121, 121, 121);
+}
+
+/* visited link */
+a:visited {
+  color: rgb(121, 121, 121);
+  border-bottom-color: rgb(121, 121, 121);
+}
+
+/* mouse over link */
+a:hover {
+  color: rgb(121, 121, 121);
+  border-bottom-color: rgb(121, 121, 121);
+}
+
+/* selected link */
+a:active {
+  color: rgb(121, 121, 121);
+  border-bottom-color: rgb(121, 121, 121);
+}
