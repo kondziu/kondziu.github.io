@@ -184,6 +184,47 @@ Only use with **arity 0 pure functions**.
 
 ## Casting
 
+```scala
+val i:Int = 1
+val d:Double = i
+```
+
+```scala
+val d:Double = 1.0d
+val i:Int = d
+```
+
+## Casting order
+
+![Type casting diagram](type-casting-diagram.svg)
+
+## Explicit casting
+
+```scala
+0.asInstanceOf[Char]
+1.asInstanceOf[Double]
+2.asInstanceOf[Float]
+'a'.asInstanceOf[Int]
+```
+
+## Tupples
+
+```scala
+val x = (1, "B")
+val y = ("A", 2, 3)
+```
+
+```scala
+val a, b = x
+
+a == x._1
+b == x._2
+```
+
+```scala
+1 -> "B"
+```
+
 ## Functions (lambdas)
 
 ```scala
@@ -227,7 +268,12 @@ val sumTwentyTwo = (a:Int, b:Int, c:Int, d:Int, e:Int, f:Int,
 
 ## Functions are objects
 
+```scala
+val f = (x: Int) => x + 1
 
+f.apply(1)
+f.toString()
+```
 
 ## Blocks
 
@@ -310,3 +356,553 @@ def outer(x: Int) = {
 }
 ```
 
+## Method to function conversion
+
+```scala
+def addOne(x: Int) = {x + 1}
+val f = addOne _             // η-conversion
+
+f.apply(1)
+f.toString()
+```
+
+```scala
+val fs = "s".toString _
+fs()
+```
+
+## Implicit conversion
+
+```scala
+def addOne(x: Int) = {x + 1}
+
+addOne.apply(1)
+addOne.toString()
+```
+
+```scala
+val x = addOne
+x(1)
+x.apply(1)
+x.toString()
+```
+
+## Classes
+
+```scala
+class Enterprise() {}
+```
+
+## Classes
+
+```scala
+class Enterprise() {                        // primary constructor
+    val version = "NCC-1701"
+    val captain = "Kirk, J. T."
+
+    val maxShields = 100
+    var shieldDmg = 0
+
+    def shieldLvl() = {maxShields - shieldDmg}
+
+    println("Split all the infinitives!")
+}
+
+val enterprise = new Enterprise()
+```
+
+## Member visibility
+
+- global visibility by default
+- `private`
+- `private[package]`
+- `private[this]`
+- `protected`
+- `protected[package]`
+- `protected[this]`
+
+## Private visibility
+
+```scala
+class Spaceship {
+  private val name = "USS Enterprise"
+
+  def compare (e: Spaceship): Boolean = e.name == this.name
+}
+```
+
+vs
+
+```scala
+class Spaceship {
+  private[this] val name = "USS Enterprise"
+
+  def compare (e: Spaceship): Boolean = e.name == this.name
+}
+```
+
+## Constructor arguments
+
+```scala
+class Enterprise(ver: String, capt: String) {
+    val version = ver
+    val captain = capt
+
+    val maxShields = 100
+    var shieldDmg = 0
+
+    def shieldLvl() = {maxShields - shieldDmg}
+}
+
+val enterprise = new Enterprise("NCC-1701", "Kirk, J. T.")
+enterprise.shieldDmg = 10
+enterprise.shieldLvl()
+enterprise.shieldLvl
+```
+
+## Additional constructor definition
+
+```scala
+class Enterprise(ver: String, capt: String) {
+    def this() = {
+        this("NCC-1701", "Kirk, J. T.")        // First expression in method
+    }
+}
+```
+
+## Parameterless methods / lazy fields
+
+```scala
+class Enterprise(ver: String, capt: String) {
+    def version = ver
+    def captain = capt
+
+    val maxShields = 100
+    var shieldDmg = 0
+
+    def shieldLvl = {maxShields - shieldDmg}
+}
+
+val enterprise = new Enterprise("NCC-1701", "Kirk, J. T.")
+enterprise.shieldDmg = 10
+enterprise.shieldLvl
+```
+
+## Inheritence and overloading
+
+```scala
+abstract class Constitution() { // extends AnyRef
+    def shipClass = "Constitution"
+    def shipName = {}
+}
+
+class Enterprise(ver: String, capt: String) extends Constitution {
+    override def shipName = "Enterprise"
+}
+```
+
+## Overloading variables
+
+```scala
+abstract class Constitution() { // extends AnyRef
+    var shipClass = "Constitution"
+    def shipName = {}
+}
+
+class Enterprise(ver: String, capt: String) extends Constitution {
+    override var shipClass = "Enterprise"
+}
+```
+
+```
+<console>:9: error: overriding variable shipClass in class Constitution of type java.lang.String;
+variable shipClass cannot override a mutable variable
+           override var shipClass = "Enterprise"
+```
+
+## Operator overloading
+
+```scala
+class C {
+    def < (that: Any): Boolean = {
+        // ...
+    }
+}
+```
+
+## Static object
+
+```scala
+object universe {
+    val age: Long = 45L
+    def getBlackHoles() = {
+        // ...
+    }
+}
+```
+
+## Companion objects
+
+```scala
+class Shipyard {
+  def makeShip = ???
+}
+
+object Shipyard {
+  def makeShipyard = ???
+  def getAllShipyards = ???
+}
+```
+
+## "main""
+
+```scala
+object Something extends App {
+   // Code goes here.
+}
+```
+
+## Generic classes
+
+```scala
+class RefCell[T] {
+    private var obj: T = _
+    def get: T = { obj }
+    def set(value: T) = { obj = value }
+}
+
+val s = new RefCell[String]
+s set "HelloWorld"
+s get
+
+val x = new RefCell[Int]
+x set 5
+x get
+```
+
+## Traits
+
+```scala
+trait WarpSpeedCapability
+```
+
+## Traits with members
+
+```scala
+trait WarpSpeedCapability {
+    def setCruisingSpeed
+    def setMaximumWarp
+}
+```
+
+## Traits with defined members
+
+```scala
+trait WarpSpeedCapability {
+    var currentSpeed = 0.
+    def setCruisingSpeed = { currentSpeed = 2. }
+    def setMaximumWarp = { currentSpeed = 9. }
+}
+```
+
+## Trait usage
+
+```scala
+class Enterprise(ver: String, capt: String) extends Constitution 
+                                           with WarpSpeedCapability {
+    override def shipName = "Enterprise"
+}
+```
+
+## Mulitple traits
+
+```scala
+trait AuxiliaryCraft {
+    var isAwayTeamSent = false
+    def sendAwayTeam = {
+        // ...
+    }
+}
+
+class Enterprise(ver: String, capt: String) extends Constitution 
+                                            with WarpSpeedCapability 
+                                            with AuxiliaryCraft {
+    override def shipName = "Enterprise"
+}
+```
+
+## Conflicting traits
+
+```scala
+trait AuxiliaryCraft {
+    val awayTeamType = "shuttlecraft"
+    def sendAwayTeam = {
+        // ...
+    }
+}
+
+trait Transporter {
+    val awayTeamType = "transporter"
+    def sendAwayTeam = {
+        // ...
+    }
+}
+```
+
+## Conflicting traits
+
+```scala
+class Enterprise(ver: String, capt: String, maxShld: Int) extends Constitution 
+                                                       with WarpSpeedCapability 
+                                                       with AuxiliaryCraft 
+                                                       with Transporter {
+    override def awayTeamType = "transporter or shuttlecraft"
+    override def sendAwayTeam = {
+        // ...
+    }
+}
+```
+
+
+## Irresolvably conflicting traits
+
+```scala
+trait AuxiliaryCraft {
+    var isAwayTeamSent = false
+    def sendAwayTeam = {
+        // ...
+    }
+}
+
+trait Transporter {
+    var isAwayTeamSent = false
+    def sendAwayTeam = {
+        // ...
+    }
+}
+```
+
+## Irresolvably conflicting traits
+
+```scala
+class Enterprise(ver: String, capt: String, maxShld: Int) extends Constitution 
+                                                         with WarpSpeedCapability 
+                                                         with AuxiliaryCraft 
+                                                         with Transporter {
+    override def sendAwayTeam = {
+        // ...
+    }
+}
+```
+
+```
+<console>:9: error: class Enterprise inherits conflicting members:
+  variable isAwayTeamSent in class AuxiliaryCraft$class of type Boolean  and
+  variable isAwayTeamSent in class Transporter$class of type Boolean
+(Note: this can be resolved by declaring an override in class Enterprise.);
+ other members with override errors are: isAwayTeamSent_=
+ ```
+ 
+## Collections
+ 
+- Immutable
+  
+    - lists
+    - ranges
+    - sets
+    - maps
+    
+- Mutable
+
+    - tables
+    - sets
+    - maps
+    - queues and stacks
+
+## 
+
+## Lists
+
+```scala
+val c = List(1, 2, 3, 4)
+val c = 1 :: 2 :: 3 :: 4 :: Nil
+val c = List(1, 2) ::: List(3, 4)
+
+c(0)
+
+c head
+c tail
+c last
+c isEmpty
+c length
+
+c reverse
+c iterator
+
+c slice (0, 2)
+```
+
+## Sets
+
+```scala
+val s = Set(1, 2, 3, 4, 4)
+
+s(1)
+s contains 1
+
+s - 1
+s + 5
+s + (6,7)
+s empty
+
+val a = Set(1, 2, 3, 4)
+val b = Set(3, 4, 5, 6)
+
+a union b       // union
+a | b           // union
+a ++ b          // union
+
+a subsetOf b
+
+a intersect b   // intersection
+a & b           // intersection
+
+a diff b        // difference
+a &~ b          // difference
+a -- b          // difference
+```
+
+## Ranges
+
+```scala
+val r = Range(0, 10)
+
+r(0)
+
+val r = 1.to(10)
+val r = 1.until(10)
+
+val r = 1 to 10
+val r = 1 until 10
+
+r reverse
+r iterator
+```
+
+## Maps:
+
+```scala
+val m = Map("a" -> 1, "b" -> 2)
+val m = Map(("a", 1), ("b", 2))
+
+m("a")
+m get "a"
+
+m get "x"
+m getOrElse ("x", -1)
+
+m contains "a"
+
+m + ("c" -> 3)
+m + ("c" -> 3, "d" -> 4)
+
+m ++ Map("c" -> 3, "d" -> 4)
+
+m - "a"
+m - ("a", "b")
+
+m -- Map("c" -> 3, "d" -> 4)
+
+m keys
+m values
+```
+
+## Tables
+
+```scala
+val arr = new Array[String](3)
+
+arr(0) = "ala"
+arr(1) = "ma"
+arr(2) = "kota"
+
+val arr = Array("ala", "ma", "kota")
+
+val cube = ofDim[Int](3,3)
+cube(0,0) = 1
+```
+
+## Higher order functions
+
+## Conditional statements
+
+```scala
+if (x > 0)
+    z = x
+else
+    z = -x
+```
+
+## While loops
+
+```scala
+while (x > 0)
+    x -= 1
+
+while (x > 0) {
+    x -= 1
+    println(x)
+}
+```
+
+## For loops
+
+```scala
+l = List(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+for (i <- l)
+    println(i)
+
+for (i <- 1 to 10)
+    println(i)
+
+for (i <- 1 until 10)
+    println(i)
+
+for (i <- 1 to 10; j <- 1 to 10)
+    println(i,j)
+    ```
+
+# For loops witrh filters
+
+```scala
+for (i <- 1 until 10 if i % 2 == 0)
+    println(i)
+
+for (i <- 1 until 10 if i % 2 == 0; if i % 3 == 0)
+    println(i)
+```
+
+## Loops are methods
+
+```scala
+for (x <- lx; y <- ly; z <-lz)
+    println(x, y, z)
+
+lx.foreach(
+    x => ly.foreach(
+        y => lz.foreach(
+            z => {
+                println(x, y, z)
+            }
+        )
+    )
+)
+```
+
+## Conditional statements are expressions
+
+```scala
+val z = if (x > 0) x else -x    // z : Int
+
+val u = for (i <- 1 to 10) i    // u : Unit
+```
