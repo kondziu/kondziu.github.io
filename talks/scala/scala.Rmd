@@ -441,6 +441,11 @@ class Spaceship {
 }
 ```
 
+```
+error: value name is not a member of Spaceship
+def compare (e: Spaceship): Boolean = e.name == this.name
+```
+
 ## Constructor arguments
 
 ```scala
@@ -465,7 +470,7 @@ enterprise.shieldLvl
 ```scala
 class Enterprise(ver: String, capt: String) {
     def this() = {
-        this("NCC-1701", "Kirk, J. T.")        // First expression in method
+        this("NCC-1701", "Kirk, J. T.")   // 1st expression in method
     }
 }
 ```
@@ -515,7 +520,8 @@ class Enterprise(ver: String, capt: String) extends Constitution {
 ```
 
 ```
-<console>:9: error: overriding variable shipClass in class Constitution of type java.lang.String;
+error: overriding variable shipClass in class Constitution 
+of type java.lang.String;
 variable shipClass cannot override a mutable variable
            override var shipClass = "Enterprise"
 ```
@@ -554,7 +560,7 @@ object Shipyard {
 }
 ```
 
-## "main""
+## "main"
 
 ```scala
 object Something extends App {
@@ -580,7 +586,7 @@ x set 5
 x get
 ```
 
-## Traits
+# Traits
 
 ```scala
 trait WarpSpeedCapability
@@ -608,8 +614,8 @@ trait WarpSpeedCapability {
 ## Trait usage
 
 ```scala
-class Enterprise(ver: String, capt: String) extends Constitution 
-                                           with WarpSpeedCapability {
+class Enterprise(ver: String, capt: String) 
+extends Constitution with WarpSpeedCapability {
     override def shipName = "Enterprise"
 }
 ```
@@ -624,9 +630,8 @@ trait AuxiliaryCraft {
     }
 }
 
-class Enterprise(ver: String, capt: String) extends Constitution 
-                                            with WarpSpeedCapability 
-                                            with AuxiliaryCraft {
+class Enterprise(ver: String, capt: String) 
+extends Constitution with WarpSpeedCapability with AuxiliaryCraft {
     override def shipName = "Enterprise"
 }
 ```
@@ -652,10 +657,11 @@ trait Transporter {
 ## Conflicting traits
 
 ```scala
-class Enterprise(ver: String, capt: String, maxShld: Int) extends Constitution 
-                                                       with WarpSpeedCapability 
-                                                       with AuxiliaryCraft 
-                                                       with Transporter {
+class Enterprise(ver: String, capt: String, maxShld: Int) 
+extends Constitution with WarpSpeedCapability 
+                     with AuxiliaryCraft 
+                     with Transporter {
+                     
     override def awayTeamType = "transporter or shuttlecraft"
     override def sendAwayTeam = {
         // ...
@@ -685,10 +691,11 @@ trait Transporter {
 ## Irresolvably conflicting traits
 
 ```scala
-class Enterprise(ver: String, capt: String, maxShld: Int) extends Constitution 
-                                                         with WarpSpeedCapability 
-                                                         with AuxiliaryCraft 
-                                                         with Transporter {
+class Enterprise(ver: String, capt: String, maxShld: Int) 
+extends Constitution with WarpSpeedCapability 
+                     with AuxiliaryCraft 
+                     with Transporter {
+                     
     override def sendAwayTeam = {
         // ...
     }
@@ -696,14 +703,16 @@ class Enterprise(ver: String, capt: String, maxShld: Int) extends Constitution
 ```
 
 ```
-<console>:9: error: class Enterprise inherits conflicting members:
-  variable isAwayTeamSent in class AuxiliaryCraft$class of type Boolean  and
+error: class Enterprise inherits conflicting members:
+  variable isAwayTeamSent in class AuxiliaryCraft$class of type Boolean and
   variable isAwayTeamSent in class Transporter$class of type Boolean
 (Note: this can be resolved by declaring an override in class Enterprise.);
  other members with override errors are: isAwayTeamSent_=
- ```
+```
  
-## Collections
+# Collections
+ 
+## Mutability
  
 - Immutable
   
@@ -718,8 +727,6 @@ class Enterprise(ver: String, capt: String, maxShld: Int) extends Constitution
     - sets
     - maps
     - queues and stacks
-
-## 
 
 ## Lists
 
@@ -789,7 +796,9 @@ r reverse
 r iterator
 ```
 
-## Maps:
+## Maps
+
+<div style="float: left; width: 50%;">
 
 ```scala
 val m = Map("a" -> 1, "b" -> 2)
@@ -802,7 +811,12 @@ m get "x"
 m getOrElse ("x", -1)
 
 m contains "a"
+```
 
+</div>
+<div style="float: right; width: 45%;">
+
+```scala
 m + ("c" -> 3)
 m + ("c" -> 3, "d" -> 4)
 
@@ -816,6 +830,8 @@ m -- Map("c" -> 3, "d" -> 4)
 m keys
 m values
 ```
+
+</div>
 
 ## Tables
 
@@ -832,7 +848,7 @@ val cube = ofDim[Int](3,3)
 cube(0,0) = 1
 ```
 
-## Higher order functions
+# Conditional statements
 
 ## Conditional statements
 
@@ -842,6 +858,16 @@ if (x > 0)
 else
     z = -x
 ```
+
+## Conditional statements are expressions
+
+```scala
+val z = if (x > 0) x else -x    // z : Int
+
+val u = for (i <- 1 to 10) i    // u : Unit
+```
+
+# Loops
 
 ## While loops
 
@@ -870,9 +896,9 @@ for (i <- 1 until 10)
 
 for (i <- 1 to 10; j <- 1 to 10)
     println(i,j)
-    ```
+```
 
-# For loops witrh filters
+## For loops with filters
 
 ```scala
 for (i <- 1 until 10 if i % 2 == 0)
@@ -899,10 +925,302 @@ lx.foreach(
 )
 ```
 
-## Conditional statements are expressions
+## Higher order functions
+
+Functions as arguments
 
 ```scala
-val z = if (x > 0) x else -x    // z : Int
+val isNull = (x:String) => x == null
+val isZeroLength = (x:String) => x.length == 0
 
-val u = for (i <- 1 to 10) i    // u : Unit
+val failIf = (predicate: Int => Boolean, x: Int) => 
+  if (predicate(x)) 
+    throw new IllegalArgumentException
+    
+def someMethod(x: String, y: String) {
+  failIf(isNull, x)
+  failIf(isZeroLength, x)
+  failIf(isNull, y)
+  
+  /* ... */
+}
 ```
+
+## Higher order functions
+
+Functions as return values
+
+```scala
+val isNull = (x:String) => x == null
+val isZeroLength = (x:String) => x.length == 0
+val isEither = (p: String => Boolean, q: String => Boolean) => 
+  (x:String) => p(x) || q(x)
+
+val failIf = (predicate: Int => Boolean, x: Int) => 
+  if (predicate(x)) 
+    throw new IllegalArgumentException
+    
+def someMethod(x: String, y: String) {
+  failIf(isEither(isNull, isZeroLength), x)
+  failIf(isNull, y)
+  
+  /* ... */
+}
+```
+
+## Map, reduce, filter
+
+```scala
+val points = List(10, 8, 13, 10, 9)
+```
+
+```scala
+val squares = points.map((e:Int) => e * e)
+val sum = points.reduce((e1:Int, e2:Int) => e1 + e2)
+val aboveAverage = points.filter((e:Int) => e > sum/points.length)
+```
+
+## Convention for higher order functions
+
+```scala
+val points = List(10, 8, 13, 10, 9)
+```
+
+```scala
+val squares = points map ((e:Int) => e * e)
+val sum = points reduce ((e1:Int, e2:Int) => e1 + e2)
+val aboveAverage = points filter ((e:Int) => e > sum/points.length)
+```
+
+
+## Convention for higher order functions
+
+```scala
+val points = List(10, 8, 13, 10, 9)
+```
+
+```scala
+val squares = points map ((e:Int) => e * e)
+val sum = points reduce ((e1:Int, e2:Int) => e1 + e2)
+val aboveAverage = points filter ((e:Int) => e > sum/points.length)
+```
+
+```scala
+val squares = points map {(e:Int) => e * e}
+val sum = points reduce {(e1:Int, e2:Int) => e1 + e2}
+val aboveAverage = points filter {(e:Int) => e > sum/points.length}
+```
+
+## Omitting types
+
+```scala
+val points = List(10, 8, 13, 10, 9)
+```
+
+```scala
+val squares = points map (e => e * e)
+val sum = points reduce ((e1, e2) => e1 + e2)
+val aboveAverage = points filter (e => e > sum/points.length)
+```
+
+## Placeholder values
+
+```scala
+val points = List(10, 8, 13, 10, 9)
+```
+
+```scala
+val squares = points map (e => e * e)
+val sum = points reduce (_ + _)
+val aboveAverage = points filter (_ > sum/points.length)
+```
+
+## Map-reduce pipeline
+
+```scala
+val mean = points.reduce(_ + _).asInstanceOf[Double] / points.length
+val variance = points
+      .map(e => Math.pow(mean - e, 2))
+      .reduce(_ + _) / (points.length - 1)
+```
+
+## Other useful functions
+
+<div style="float: left; width: 40%;">
+```scala
+fold
+foldLeft
+foldRight
+
+reduce
+reduceLeft
+reduceRight
+
+scan
+scanLeft
+scanRight
+```
+</div>
+<div style="float: right; width: 50%;">
+
+```scala
+map
+flatMap
+
+filter
+
+partition
+```
+
+</div>
+
+## Call by value (set up)
+
+```scala
+var currentLevel = 'debug                                                         //'
+def log(level: Symbol, message: String) = {
+  if (level == currentLevel)
+    println(message)
+}
+
+def someMethod(x: Any) = {
+  log('debug, ">>> someMethod(x=" + x +")")                                                         //'
+  
+  /* ... */
+  
+  log('debug, "<<< someMethod(x=" + x +")")                                                         //'
+}
+
+someMethod(42)
+
+currentLevel = 'production                                                         //'
+someMethod(42)
+```
+
+## Call by value (set up)
+
+```scala
+var currentLevel = 'debug                                                         //'
+def log(level: Symbol, message: String) = {
+  if (level == currentLevel)
+    println(message)
+}
+
+def someMethod(x: Any) = {
+  log('debug, ">>> someMethod(x=" + x +")")                                                         //'
+  
+  /* ... */
+  
+  log('debug, "<<< someMethod(x=" + x +")")                                                         //'
+}
+
+someMethod({println("very expensive computation happens"); 42})
+
+currentLevel = 'production                                                         //'
+someMethod({println("very expensive computation happens"); 42})
+```
+
+## Call by value
+
+```scala
+var currentLevel = 'debug                                                         //'
+def log(level: Symbol, message: => String) = {
+  if (level == currentLevel)
+    println(message)
+}
+
+def someMethod(x: => Any) = {
+  log('debug, ">>> someMethod(x=" + x +")")                                                         //'
+  
+  /* ... */
+  
+  log('debug, "<<< someMethod(x=" + x +")")                                                         //'
+}
+
+someMethod({println("very expensive computation happens"); 42})
+
+currentLevel = 'production                                                         //'
+someMethod({println("very expensive computation happens"); 42})
+```
+
+## Pattern matching
+
+```scala
+def f(x: Any) = {
+    x match {
+        case "1" => 1
+        case "a" | "A" => 1
+        case "b" | "B" => 2
+        case _ => -1
+    }
+}
+```
+
+## Pattern matching by type
+
+```scala
+def f(x: Any) = {
+    x match {
+        case i: Int => i
+        case s: String => {
+            val lcase = s toLowerCase
+            val ch = (lcase toCharArray) apply 0
+            ch - 96
+        }
+        case _ => -1
+    }
+}
+```
+
+## Pattern matching collections
+
+```scala
+def length (l: Any) = {
+    l match {
+         case Nil => "empty"
+         case _ :: Nil => "one"
+         case _ :: _ :: Nil => "two"
+         case _ :: _ :: tail => "more than two"
+         case _ => "probably not a list"
+    }
+}
+```
+
+## Conditions
+
+```scala
+def grade(perc: Double) : String = {
+  perc match {
+    case x if x < 0 => "??"
+    case x if x < 65 => "F"
+    case x if x < 67 => "D"
+    case x if x < 70 => "D+"
+    case x if x < 73 => "C-"
+    case x if x < 77 => "C"
+    case x if x < 80 => "C+"
+    case x if x < 83 => "B-"
+    case x if x < 88 => "B"
+    case x if x < 90 => "B+"
+    case x if x < 93 => "A-"
+    case x if x < 97 => "A"
+    case x if x < 100 => "A+"
+    case _ => "wtf"
+  }
+}
+```
+
+## Case classes
+
+```scala
+abstract class BTreeNode
+case class Leaf(v:Int) extends BTreeNode
+case class ConcreteNode(l: Leaf, r: Leaf, v:Int) extends BTreeNode
+
+def getValue(node: BTreeNode) = {
+    node match {
+         case ConcreteNode(l, r, v) => v
+         case Leaf(v) => v
+    }
+}
+```
+
