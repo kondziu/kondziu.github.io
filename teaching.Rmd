@@ -8,7 +8,19 @@ knitr::opts_chunk$set(echo = FALSE)
 
 <br/>
 
+## Czech Technical University in Prague
+
+**Object Oriented Programming (and Design)**
+Tutorial instructor. Fall 2019.
+[[Website](https://courses.fit.cvut.cz/BI-OOP/)].
+
+<hr/>
+
 ## Northeastern University
+
+**Expeditions in Data Science**.
+Invited lectures. Fall 2018.
+[[Website](http://janvitek.org/events/NEU/6050/)]
 
 **Parallel Data Processing in MapReduce**. 
 Co-instructor (w/ Jan Vitek). Fall 2017.
