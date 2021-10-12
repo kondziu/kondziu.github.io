@@ -1,7 +1,7 @@
 ---
 author: Konrad Siek
 title: CV
-date: October 2021
+date: konrad.siek 🐌 gmail.com
 output: 
     html_document:
         css: css/davidwhipp-screen.css
@@ -69,6 +69,10 @@ Topics: R language and runtime,
 **Volunteer** for (District Municipal Library in Piła)(https://www.biblioteka.pila.pl/)-->
 
 
+## Languages
+
+`Proficient` English, Polish  
+`Beginner` Czech, French   
 
 
 
