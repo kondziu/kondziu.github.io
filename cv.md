@@ -1,7 +1,7 @@
 ---
 author: Konrad Siek
 title: CV
-date: konrad.siek 🐌 gmail.com
+date: konrad.siek🐌gmail.com
 output: 
     html_document:
         css: css/davidwhipp-screen.css
@@ -19,62 +19,234 @@ layout: cv
 
 ## Summary
 
-xx
-xx
-xx
+I write code, I write prose, I do sketchy things to runtimes  
+I solve simple problems in complicated ways  
+I like working with students  
 
 ## Education
 
 `January 2017` 
-**Doctorate** in Computing Science at [Poznań University of Technology](http://www.put.poznan.pl/)  
-Dissertation: *Distributed pessimistic transactional memory: algorithms and properties*  
-Advisor: Paweł T. Wojciechowski  [`📎`](https://kondziu.github.io/pub/dissertation.pdf)
-
+**Doctorate** in **Computing Science** at [Poznań University of Technology](http://www.put.poznan.pl/)  
+Dissertation: *Distributed pessimistic transactional memory: algorithms and properties* [`🔗`](https://kondziu.github.io/pub/dissertation.pdf)  
+Advisor: Paweł T. Wojciechowski  
+Reviewers: Marek Tudruj, Michel Raynal
 
 `September 2009`
-**Master’s** in Computing Science (SE) at [Poznań University of Technology](http://www.put.poznan.pl/)  
-Thesis: *Design and implementation of a Java source code precompilation tool for static analysis and modification of programs for the Atomic RMI library*  
+**Master’s** in **Computing Science** (Software Engineering) at [Poznań University of Technology](http://www.put.poznan.pl/)  
+Thesis: *A Java source code precompilation tool for static analysis and modification of programs for the Atomic RMI library*  
 Advisor: Paweł T. Wojciechowski  
 
-`February 2009`
-**Engineering Degree** in Computing Science at [Poznań University of Technology](http://www.put.poznan.pl/)  
+`February 2008`
+**Bachelor of Engineering** in **Computing Science** at [Poznań University of Technology](http://www.put.poznan.pl/)  
 Thesis: *Amebae: a group instant messenger for developers* (co-author)  
 Advisor: Bartosz Walter
 
-
 `June 2007`
-**Bachelor of Arts Degree** in English Philology at [PWSZ in Piła](https://puss.pila.pl/)  
-Thesis: *Computer assisted language learning software: experimental study*   
+**Bachelor of Arts** in **English Philology** at [PWSZ in Piła](https://puss.pila.pl/)  
+Thesis: *Computer-assisted language learning software: experimental study*   
 Advisor: Anna Szczepaniak-Kozak  
 
-## Work
+## Employment
 
 `2017–2022`
-**Post-doc** at [Programming Research Lab](https://prl-prg.github.io/) at [Czech Technical University in Prague](https://www.cvut.cz/)  
-Topics: R language and runtime, 
+**Post-doc researcher** at [Programming Research Lab](https://prl-prg.github.io/) at [Czech Technical University in Prague](https://www.cvut.cz/)  
+‣ Analysis of large code repositories  
+‣ Larger than memory object abstraction for R  
+‣ R runtime internals survey  
+‣ Teaching
 
-
-`2017`
+`most of 2017`
 **Visiting researcher** at [Programming Research Lab](http://prl.ccs.neu.edu/) at [Northeastern University](http://www.northeastern.edu/)  
+‣ Lazy evaluation in R  
+‣ Teaching 
+
 `2013–2017`
 **Research assistant** at [Distributed Systems Group](http://dsg.cs.put.poznan.pl/) at [Poznań University of Technology](https://www.put.poznan.pl/)  
+‣ Transactional memory safety properties  
+‣ Distributed TM system implementation and benchmarking  
+‣ Static analysis and code generation  
+‣ Teaching  
+
 `2009–2012`
-**Developer** for IT-SOA Research Project at [Poznań University of Technology](https://www.put.poznan.pl/)
-`2008–2009`  
+**Developer** for IT-SOA Research Project at [Poznań University of Technology](https://www.put.poznan.pl/)  
+‣ Static analysis of critical sections  
+‣ Code generation and Java bytecode instrumentation  
+
+`2008–2009`
 **Developer** for [PSI Poland](https://www.psi.pl)  
-`2005-2006`
-**Apprentice Language Teacher** at [Elementary School No. 4 in Piła](https://sp4.e-pila.pl/)
+‣ Database stuff for an automotive factory
+
+`2005–2006`
+**Apprentice English Language Teacher** at [Elementary School No. 4 in Piła](https://sp4.e-pila.pl/)  
+‣ Teaching (under supervision)
 
 <!--`2007`
 **Volunteer** for (District Municipal Library in Piła)(https://www.biblioteka.pila.pl/)-->
 
+## Projects
+
+`February 2019`
+**UFOs:** Lazy larger-than-memory object arrays via userfaultfd  
+[`🔗`](https://github.com/ufo-org/)
+User provides an arbitrary function to populate a chunk of memory. 
+Framework allocates an area of memory and transparently executes the population function when a chunk is read or written to.
+Chunks are seemlessly garbage-collected and re-generated as needed. 
+Example implementations generate in-memory arrays from columns in CSV files, BZIP file, and formulas.
+Comes with C, R, and Rust bindings.  
+My contribution: Back-ends, R bindings and utilities, parts of garbage collection. 
+
+`July 2020`
+**CodeDJ:** Reproducible queries over large-scale software repositories  
+[`🔗`](https://codedj-prg.github.io)
+Infrastructure for querying GitHub and similar repositories for quantitative software engineering research (especially project selection) in large code datasets. 
+It prioritizes reproducibility and scalability and consists of two modules. 
+*Parasite* is an incremental downloader and persistent datastore. 
+*Djanco* is an in-memory database and query language embedded in Rust.  
+My contribution: Djanco.
+
+`February 2021`
+**FML:** A small runtime for teaching runtimes  
+[`🔗`](https://github.com/kondziu/FML)
+Toy bytecode compiler and interpreter designed as a model for student implementations in a runtimes class.
+Runs a vaguelky ML-like toy dynamic language with objects, inheritence, dynamic dispatch and garbage collection but not much else. 
+The compiler generates slightly extended Feeny bytecode (another teaching language) consisting of 17 ops and 7 internal objects.  
+My contribution: Solo project.
+
+`July 2021`
+**Rust-delegate:** Method delegation generator macro for Rust  
+[`🔗`](https://github.com/Kobzol/rust-delegate)
+A Rust macro that generates method delegation to inner fields within structs.  
+My constribution: Syntax for injecting arbitrary expressions as arguments ot delegated functions.
+
+
+`July 2018`
+**TinyTracer:** A minimalistic tracer for analyzing the composition of R objects  
+[`🔗`](https://github.com/PRL-PRG/tinytracer/)
+R 3.5 runtime variant instrumented to analyze objects at garbage collection. 
+The tracer records the types of each object, and the types object in all the slots slots in each object. 
+Used to find rare and anomalous object constuction.  
+My contribution: Everything.
+
+`2017–2018`
+**R-dyntrace:** 
+[`🔗`](https://github.com/PRL-PRG/R-dyntrace)
+
+`January 2019`
+**GHGrabber:** Small GitHub scraper
+[`🔗`](https://github.com/PRL-PRG/ghgrabber)
+
+`2010–2016`
+**AtomicRMI:** Pessimistic distributed transactional memory system over Java RMI  
+[`🔗`](https://github.com/kondziu/AtomicRMI)
+Implementation of pessimistic transactional concurrency control for Java RMI.
+RMI objects are instrumented to 
+The algorithm assigns versions to shared objects and uses them to guide how transactions lock and release them.
+It uses upper bounds on the number of accesses of an object within transactions to release locks early, if this is safe. 
+It also uses local buffers to defer the need to synchronize transactions in specific situations.  
+My contribution: Optimizations to the original algorithm, most of the implementation.
+
+**GrittyScripts**
+
+
+## Teaching
+
+`2019-2021`
+Runtime systems (NI-RUN)
+Czech Technical University in Prague
+https://courses.fit.cvut.cz/NI-RUN/
+
+`2017`
+Expeditions in Data Science (DS6050)
+with Jan Vitek
+http://janvitek.org/events/NEU/6050/
+
+`2017`
+Parallel Data Processing in MapReduce (DS6240)
+with Jan Vitek
+Northeastern University
+http://janvitek.org/pdpmr/f17/
+
+`2014–2016`
+Safe programming methods (functional programming)
+with Paweł T. Wojciechowski
+Poznań University of Technology
+http://www.cs.put.poznan.pl/pawelw/mbp/
+http://www.cs.put.poznan.pl/ksiek/fp/fp.html
+
+`2012–2013, 2016`
+Networks
+with 
+Poznań University of Technology
+
+
+
+`2009–2016`
+Operating systems 
+Poznań University of Technology
+
+`2009–2017`
+Basic IT
+Poznań University of Technology (for Poznań University of Medical Sciences students)
+[`🔗`](http://www.cs.put.poznan.pl/ksiek/pi/pi.html)
+
+
+
+
+
+
+
+## Supervised theses
+
+`submitted 2021`
+Nilay Baranwal. *Structured printing framework.*  
+Bachelor thesis at Czech Technical University in Prague.  
+
+`2021`
+Jan Jindráček. *Usability improvements to JavaScript/ECMAScript.*  
+Master thesis at Czech Technical University in Prague.  
+
+`2016`
+Kamil Kozubal, Jakub Cieślak. *Hummy—An implementation of distributed transactional memory focused on performance.*  
+Engineering thesis at Poznań University of Technology.  
+Assistant supervisor under Paweł T. Wojciechowski. 
+
+`2015`
+Martin Witczak. *Atomic Café—A distributed multimedia playback system.*  
+Master thesis at Poznań University of Technology.  
+Assistant supervisor under Paweł T. Wojciechowski.
+
+`2015`
+Jan Baranowski. *Benchmarks for evaluating distributed transactional memory.*  
+Master thesis at Poznań University of Technology.  
+Assistant supervisor under Paweł T. Wojciechowski.
 
 ## Languages
 
 `Proficient` English, Polish  
-`Beginner` Czech, French   
+`Beginner` Czech, French  
 
+## Programming languages
 
+`Up-to-date` Rust, C, R, Bash, AWK, LaTeX  
+`Rusty` Scala, Java, Python, OCaml  
+
+## Extracurricular work
+
+I was involved in a student club. I did work on PIWO. I organized workshops and lectures.
+
+I organized remedial scala classes.
+
+Library
+
+## Hobbies
+
+Inking  
+Taking overexposed photos  
+Uncool musical instruments  
+Bad sci-fi  
+Making lesson plans to explain declension  
+Puns and haiku  
+Kendo for one summer  
 
 <hr/>
 
@@ -175,7 +347,7 @@ In Proceedings of EC :math:`^2` 2010: Workshop on Exploiting Concurrency Efficie
 
 ## Technical reports
 
-Jan Baranowki, Konrad Siek, Paweł T. Wojciechowski.  
+Jan Baranowski, Konrad Siek, Paweł T. Wojciechowski.  
 **Analiza Programów Wzorcowych dla Rozproszonej Pamieci Transakcyjnej**.  
 Raport RB-3/15. Instytut Informatyki Politechniki Poznańskiej.  
 [[PDF](pub/rb-3-15.pdf)]
