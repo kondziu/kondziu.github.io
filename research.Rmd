@@ -107,7 +107,7 @@ In Proceedings of WTM 2012: Euro-TM Workshop on Transactional Memory (co-located
 
 Konrad Siek, Paweł T. Wojciechowski.  
 **Statically Computing Upper Bounds on Object Calls for Pessimistic Concurrency Control** (extended abstract).  
-In Proceedings of EC :math:`^2` 2010: Workshop on Exploiting Concurrency Efficiently and Correctly (co-located with CAV 2010). July 2010.  
+In Proceedings of EC² 2010: Workshop on Exploiting Concurrency Efficiently and Correctly (co-located with CAV 2010). July 2010.  
 [[PDF](pub/sw10.pdf)]
 
 <hr/>

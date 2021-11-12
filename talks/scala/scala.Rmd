@@ -1,12 +1,13 @@
 ---
 title: "Scala"
-subtitle: "An abrupt introduction"
 author: "Konrad Siek"
 date: "September, 2019"
-output: 
+output:
   ioslides_presentation:
-    footer: "BI(E)-OOP 2019"
     css: styles.css
+    footer: BI(E)-OOP 2019
+  beamer_presentation: default
+subtitle: An abrupt introduction
 highlight: pygments
 ---
 
