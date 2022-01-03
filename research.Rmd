@@ -19,6 +19,22 @@ Submitted June 2016, defended January 2017.
 
 ## Papers
 
+Petr Maj, Konrad Siek, Alexander Kovalenko, Jan Vitek.  
+**CodeDJ: Reproducible Queries over Large-Scale Software Repositories**.  
+In proceedings of ECOOP 2021:  the 35th European Conference on Object-Oriented Programming. LIPICS Vol. 194.  
+July 2021.  
+[[DOI](10.4230/LIPIcs.ECOOP.2021.6)]
+
+<hr/>
+
+Konrad Siek, Paweł T. Wojciechowski.  
+**Last-use Opacity: A Strong Safety Property for Transactional Memory with Prerelease Support**.  
+Distributed Computing.  
+Submitted December 2019. Accepted December 2021.  
+*To appear.*
+
+<hr/>
+
 Paweł Kobyliński, Konrad Siek, Jan Baranowski, Paweł T. Wojciechowski.  
 **Helenos: A Realistic Benchmark for Distributed Transactional Memory**.  
 Journal of Software: Practice and Experience.
@@ -55,10 +71,26 @@ Lecture Notes in Computer Science Volume 7437, pp 192–206. August 2012.
 
 ## Short papers
 
+Konrad Siek and Colette Kerr.  
+**Userfault objects: transparent programmable memory.**  
+In Proceedings of ICOOOLPS'21: Workshop on Implementation, Compilation, Optimization of Object-oriented Languages, Programs and Systems.  
+[[PDF](https://conf.researchr.org/details/issta-2021/ecoop-issta-2021-icooolps/6/Userfault-Objects-Transparent-Programmable-Memory)]  
+
+<hr/>
+
+Konrad Siek, Colette Kerr.  
+**Larger-than-memory R.**  
+In useR!'2020: The R User Conference.  
+[[Video](https://www.youtube.com/watch?v=6BI5xWWDrlA)]
+
+<hr/>
+
 Paweł T. Wojciechowski, Konrad Siek.  
 **Atomic RMI 2: Distributed Transactions for Java**.  
 In Proceedings of AGERE'16: the 6th International Workshop on Programming Based on Actors, Agents, and Decentralized Control. October 2016.  
 [[abstract](https://2016.splashcon.org/event/agere2016-atomic-rmi-2-distributed-transactions-for-java)]
+
+<hr/>
 
 Konrad Siek, Paweł T. Wojciechowski.   
 **Brief Announcement: Relaxing Opacity in Pessimistic Transactional Memory**.  

@@ -1,0 +1,79 @@
+Concurrency
+========================================================
+
+Leslie Lamport. **Time, Clocks and the Ordering of Events in a Distributed System**. CACM 1978. 
+   
+Given a happens-before relation →,  
+P and Q where P ≠ Q are **concurrent**  
+iff and P ↛ Q and Q ↛ P. 
+
+Interactions between processes:  shared memory, messages.
+
+Is this execution correct?
+========================================================
+
+```
+[θ1] move(a,b)       ‖  [θ2] move(a,b)
+a.isEmpty() → false  ‖  a.isEmpty() → false
+a.pop() → x          ‖
+                     ‖  a.pop() → y
+                     ‖  b.push(y)
+b.push(x)            ‖
+commit → ok          ‖  commit → ok
+``` 
+
+
+Initial state: `a=[x, y], b=[]`  
+Expected final state: `a[], b=[x, y]`  
+Actual final state: `a[], b=[y, x]` ❌
+
+Is this execution correct?
+========================================================
+
+```
+[θ1] move(a,b)       ‖  [θ2] move(a,b)
+a.isEmpty() → false  ‖  
+a.pop() → x          ‖
+b.push(x)            ‖       
+commit → ok          ‖  a.isEmpty() → false
+                     ‖  a.pop() → y
+                     ‖  b.push(y)
+                     ‖  commit → ok                    
+``` 
+
+Initial state: `a=[x, y], b=[]`  
+Expected final state: `a[], b=[y, x]`  
+Actual final state: `a[], b=[y, x]` ✓
+
+Is this execution correct?
+========================================================
+
+```
+[θ1] move(a,b)       ‖  [θ2] move(a,b)
+a.isEmpty() → false  ‖  
+a.pop() → x          ‖
+b.push(x)            ‖       
+commit → ok          ‖  a.isEmpty() → true
+                     ‖  commit → ok                    
+``` 
+
+Initial state: `a=[x], b=[]`  
+Expected final state: `a=[], b=[x]`  
+Actual final state: `a=[], b=[x]` ✓
+
+Is this execution correct?
+========================================================
+
+```
+[θ1] move(a,b)       ‖  [θ2] move(a,b)
+a.isEmpty() → false  ‖  a.isEmpty() → false
+a.pop() → y          ‖ 
+                     ‖  a.pop() → x
+                     ‖  b.push(x)
+b.push(y)            ‖
+commit → ok          ‖  commit → ok
+``` 
+
+Initial state: `a=[x, y], b=[]`  
+Expected final state: `a[], b=[y, x]`  
+ 

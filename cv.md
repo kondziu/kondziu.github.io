@@ -14,15 +14,16 @@ layout: cv
 -->
 
 <link rel="stylesheet" href="css/davidwhipp-screen.css">
+<img style="float: right;" src="img/photo2.jpg">
 
 <br/>
-
-## Summary
 
 *I explain things*  
 *I write code, I write prose, I do sketchy things to runtimes*  
 *I solve simple problems in complicated ways*  
 *I abstract*  
+
+## Summary
 
 My **core interests** are  
 ‣ programming languages, especially abstractions and runtimes  
@@ -36,10 +37,14 @@ My **skills** include
 ‣ teaching  
 ‣ technical writing  
 
-I **program** in Rust, C, R, and Bash
-and have past experience with Java, Scala, Python, OCaml and numerous other languages
+I **program** in  
+‣ (currently) Rust, C, R, Bash  
+‣ (previously) Scala, Python, Java, OCaml  
+‣ (intermittently) numerous others
 
-I **speak** English and Polish and a just little bit of Czech and French
+I **speak**  
+‣ (proficiently) English and Polish   
+‣ (learning) Czech and French
 
 <!--
 ## Skills
@@ -260,6 +265,12 @@ Petr Maj, Konrad Siek, Alexander Kovalenko, and Jan Vitek
 In Proceedings of ECOOP'21: European Conference on Object-Oriented Programming  
 DOI: [10.4230/LIPIcs.ECOOP.2021.6](https://doi.org/10.4230/LIPIcs.ECOOP.2021.6) and artifact: [🔗](https://github.com/PRL-PRG/codedj-ecoop-artifact)
 
+`Submitted December 2019`
+**Last-use Opacity: A Strong Safety Property for Transactional Memory with Prerelease Support**.  
+`Accepted December 2021`
+Konrad Siek, Paweł T. Wojciechowski.  
+Distributed Computing.  *To appear.*
+
 `March 2018`
 [**Helenos: A realistic benchmark for distributed transactional memory**](http://onlinelibrary.wiley.com/doi/10.1002/spe.2548/full)  
 Paweł Kobyliński, Konrad Siek, Jan Baranowski, and Paweł T. Wojciechowski  
@@ -383,7 +394,7 @@ As assistant supervisor under Paweł T. Wojciechowski
 Master thesis at Poznań University of Technology  
 As assistant supervisor under Paweł T. Wojciechowski
 
-## Organizational work
+## Volunteer and organizational work
 
 `2019`
 [**ETAPS'19:** European Joint Conferences on Theory and Practice of Software](https://conf.researchr.org/home/etaps-2019)  
@@ -393,17 +404,34 @@ Role: poster chair
 [**SPLASH'18:** Systems, Programming, Languages, and Applications: Software for Humanity](https://2018.splashcon.org/)  
 Role: poster chair
 
+`2015`
+[**COST Action IC1001:** Transactional Memories: Foundations, Algorithms, Tools, and Applications](http://www.eurotm.org/)  
+Role: management comittee substitute member for Poland
+
 `2014–2016`
 [**PIWO:** Poznańska Impreza Wolnego Oprogramowania (Poznań Free Software Meetup)](https://www.facebook.com/piwo.poznan/)  
-Role: key organizer and resurector
+Role: lead organizer and resurector
+
+`2012–2016`
+[**KN SKISR:** Koło Naukowe Sieci Komputerowych i Systemów Rozproszonych (Networks and Distributed Systems Student Club)](https://www.facebook.com/knskisr/)  
+Role: faculty organizer
+
+`2007`
+[**District Municipal Public Library in Piła CMS system**](https://www.biblioteka.pila.pl/)  
+Role: developement and deployment for a content manmagement system for the local library website.
+
+Popular science talks and programming courses:  
+ 
+‣ [*Remedial scala*](https://courses.fit.cvut.cz/BI-OOP/@B191/labs/remedial-scala.html) `2019`  
+‣ [*Transactional safety primer (aka Konrad does Transactions)*](https://kondziu.github.io/talks/opacity/slides.html) `2018`  
+‣ [*System Aktorów (Actor Systems)*](http://www.cs.put.poznan.pl/ksiek/talks/actors.html) `2016`  
+‣ [*Podstawy Programowania w Pythonie (Basics of Python Programming)*](http://www.cs.put.poznan.pl/ksiek/talks/python.html) `2015`  
+‣ [*Programowanie Funkcyjne w Pythonie (Functional Programming in Python)*](http://www.cs.put.poznan.pl/ksiek/talks/python.html) `2013`  
+‣ [*Warsztat Python (Python Workshop)*](https://dsg.cs.put.poznan.pl/wiki/pythonwarsztat) `2013`  
+‣ [*Bezbolesne Programowanie Współbieżne (Painless Concurrent Programming)*](http://www.cs.put.poznan.pl/ksiek/talks/painless.html) 
+`2012, 2014`  
 
 
-
-I was involved in a student club
-
-I organized remedial scala classes.
-
-Library
 
 ## Hobbies
 
@@ -411,7 +439,5 @@ Inking (like drawing, but with ink)
 Taking overexposed photos  
 Uncool musical instruments  
 Bad sci-fi audiobooks  
-Making lesson plans to explain declension  
-Puns and haiku  
-Kendo for one summer and then never again
-
+Explaining how language works    
+Kendo for one summer and then never again  
