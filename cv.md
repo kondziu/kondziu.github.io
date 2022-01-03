@@ -1,7 +1,7 @@
 ---
-author: Konrad Siek
-title: CV
-date: konrad.siek🐌gmail.com
+author: 
+title: Konrad Siek
+date: 
 output: 
     html_document:
         css: css/davidwhipp-screen.css
@@ -14,7 +14,11 @@ layout: cv
 -->
 
 <link rel="stylesheet" href="css/davidwhipp-screen.css">
+
 <img style="float: right;" src="img/photo2.jpg">
+
+
+konrad.siek🐌gmail.com
 
 <br/>
 
@@ -122,10 +126,10 @@ Advisor: Anna Szczepaniak-Kozak
 `February 2019`
 [**UFOs:** Lazy larger-than-memory object arrays via userfaultfd](https://github.com/ufo-org/)  
 User provides an arbitrary function to populate a chunk of memory. 
-Framework allocates an area of memory and transparently executes the population function when a chunk is read or written to.
+Framework allocates an area of memory and transparently executes the population function when a chunk is read or written to
 Chunks are seemlessly garbage-collected and re-generated as needed. 
-Example implementations generate in-memory arrays from columns in CSV files, BZIP file, and formulas.
-Comes with C, R, and Rust bindings.  
+Example implementations generate in-memory arrays from columns in CSV files, BZIP file, and formulas
+Comes with C, R, and Rust bindings  
 My contribution: Back-ends, R bindings and utilities, parts of garbage collection. 
 
 `July 2020`
@@ -133,115 +137,115 @@ My contribution: Back-ends, R bindings and utilities, parts of garbage collectio
 Infrastructure for querying GitHub and similar repositories for quantitative software engineering research (especially project selection) in large code datasets. 
 It prioritizes reproducibility and scalability and consists of two modules. 
 *Parasite* is an incremental downloader and persistent datastore. 
-*Djanco* is an in-memory database and query language embedded in Rust.  
-My contribution: Djanco and surrounding tooling.
+*Djanco* is an in-memory database and query language embedded in Rust  
+My contribution: Djanco and surrounding tooling
 
 `February 2021`
 [**FML:** A small runtime for teaching runtimes](https://github.com/kondziu/FML)  
-Toy bytecode compiler and interpreter designed as a model for student implementations in a runtimes class.
+Toy bytecode compiler and interpreter designed as a model for student implementations in a runtimes class
 Runs a vaguelky ML-like toy dynamic language with objects, inheritence, dynamic dispatch and garbage collection but not much else. 
-The compiler generates slightly extended Feeny bytecode (another teaching language) consisting of 17 ops and 7 internal objects.  
-My contribution: Everything.
+The compiler generates slightly extended Feeny bytecode (another teaching language) consisting of 17 ops and 7 internal objects  
+My contribution: Everything
 
 `July 2021`
 [**Rust-delegate:** Method delegation generator macro for Rust](https://github.com/Kobzol/rust-delegate)  
-A Rust macro that generates method delegation to inner fields within structs.  
-My constribution: Syntax for injecting arbitrary expressions as arguments ot delegated functions.
+A Rust macro that generates method delegation to inner fields within structs  
+My constribution: Syntax for injecting arbitrary expressions as arguments ot delegated functions
 
 
 `July 2018`
 [**TinyTracer:** A minimalistic tracer for analyzing the composition of R objects](https://github.com/PRL-PRG/tinytracer/)  
-R 3.5 runtime variant instrumented to analyze objects at garbage collection. 
-The tracer records the types of each object, and the types object in all the slots slots in each object. 
-Used to find rare and anomalous object constuction.  
-My contribution: Everything.
+R 3.5 runtime variant instrumented to analyze objects at garbage collection 
+The tracer records the types of each object, and the types object in all the slots slots in each object 
+Used to find rare and anomalous object constuction  
+My contribution: Everything
 
 `2017–2018`
 [**R-dyntrace:** A dynamic tracer for R](https://github.com/PRL-PRG/R-dyntrace)  
 An infrastructure for programmable probes into the R runtime. Used to perform
 custom dynamic analysis of R code. Subsequently used in research into lazy
-evaluation in R programs.  
-My contribution: Overall design and implementation of probes in the previous version.
+evaluation in R programs  
+My contribution: Overall design and implementation of probes in the previous version
 
 `2019–2020`
 [**GHGrabber:** Small Git scraper](https://github.com/PRL-PRG/ghgrabber)  
 A small multi-process bash program
 that gathers basic information about a Git repositories from a list of URLs and
 outputs CSV files. Used to collect large datasets for teaching and software
-engineering research.  
-My contribution: Everything.
+engineering research  
+My contribution: Everything
 
 `2010–2016`
 [**AtomicRMI:** Pessimistic distributed transactional memory system over Java RMI](https://github.com/kondziu/AtomicRMI)  
-Implementation of pessimistic transactional concurrency control for Java RMI.
+Implementation of pessimistic transactional concurrency control for Java RMI
 RMI objects are instrumented to 
-The algorithm assigns versions to shared objects and uses them to guide how transactions lock and release them.
+The algorithm assigns versions to shared objects and uses them to guide how transactions lock and release them
 It uses upper bounds on the number of accesses of an object within transactions to release locks early, if this is safe. 
-It also uses local buffers to defer the need to synchronize transactions in specific situations.  
-My contribution: Optimizations to the original algorithms, most of the implementation.
+It also uses local buffers to defer the need to synchronize transactions in specific situations  
+My contribution: Optimizations to the original algorithms, most of the implementation
 
 `2008-2016`
 [**GrittyScripts** A blog collecting miscallaneous scripts](https://http://grittyscripts.blogspot.com)  
 A blog presenting small useful scripts in Bash, Python, AWK,
 OCaml, and other languages with some analysis of the problem and attempts at
-clever solutions and dirty hacks.  
-My contribution: Everything.
+clever solutions and dirty hacks  
+My contribution: Everything
 
 ## Teaching
 
 `2019-2021`
 [**Runtime systems** (NI-RUN B202)](https://courses.fit.cvut.cz/)
 at [Czech Technical University in Prague](https://www.cvut.cz/)  
-Course on process virtual machines for programming languages teaching basic concepts, taxonomy of VMs, architecture of runtimes, bytecode compilation and interpretation, memory management, and just in time compilation.  
-Designed and taught independently.
+Course on process virtual machines for programming languages teaching basic concepts, taxonomy of VMs, architecture of runtimes, bytecode compilation and interpretation, memory management, and just in time compilation  
+Designed and taught independently
 
 `2018`
 [**Object-oriented programming** (BIE-OOP B191)](https://courses.fit.cvut.cz/BI-OOP/@B191/)
-Course on the principles of object oriented programming and design in Scala with an emphasis on practical techniques for developing complex software and software engineering skills: testing, error handling, refactoring, design pattern.   
-My contribution: leading a lab group and lectures on object-oriented design.  
+Course on the principles of object oriented programming and design in Scala with an emphasis on practical techniques for developing complex software and software engineering skills: testing, error handling, refactoring, design pattern  
+My contribution: leading a lab group and lectures on object-oriented design  
 Led by: [Filip Křikava](http://fikovnik.net/)
 
 
 `2017`
 [**Expeditions in Data Science** (DS6050)](http://janvitek.org/events/NEU/6050/)
 at [Northeastern University](http://www.northeastern.edu/)  
-Course on practical problems of data science projects, teaching importing, tyding and transformation of large data, statistical modelling, visualization, repeatability and reproducibility of results.  
-My contribution: assignments and lectures on databases.  
+Course on practical problems of data science projects, teaching importing, tyding and transformation of large data, statistical modelling, visualization, repeatability and reproducibility of results  
+My contribution: assignments and lectures on databases  
 Led by: [Jan Vitek](http://janvitek.org)  
 
 `2017`
 [**Parallel data processing in MapReduce** (DS6240)](http://janvitek.org/pdpmr/f17/)
 at [Northeastern University](http://www.northeastern.edu/)  
-Course on distributed processing of large data involving Hadoop and Spark, H20, and Tensorflow.  
+Course on distributed processing of large data involving Hadoop and Spark, H20, and Tensorflow  
 My contribution: assignment designs and lectures on pipeline processing, Spark and Hadoop  
 Led by: [Jan Vitek](http://janvitek.org)  
 
 `2014–2016`
 [**Safe programming methods** (MBP)](http://www.cs.put.poznan.pl/ksiek/fp/fp.html)
 at Poznań University of Technology  
-Course on safe programming methods and languages in the context of concurrent and distributed systems: memory models, monitors, transactional memory, message passing, map-reduce. Labs involved a complete functional programming course in Scala explaining techniques like currying, lazy evaluation, and trampolining, as well as programming with sactors.  
-My contribution: designed and implementation of the functional programming sub-course as teaching associate.  
+Course on safe programming methods and languages in the context of concurrent and distributed systems: memory models, monitors, transactional memory, message passing, map-reduce. Labs involved a complete functional programming course in Scala explaining techniques like currying, lazy evaluation, and trampolining, as well as programming with sactors  
+My contribution: designed and implementation of the functional programming sub-course as teaching associate  
 Led by: [Paweł T. Wojciechowski](http://www.cs.put.poznan.pl/pawelw/)
 
 `2016`
 [**Network Programming** (SK2)](http://www.cs.put.poznan.pl/ksiek/sk2/sk2.html)
 at [Poznań University of Technology](http://www.put.poznan.pl/)  
-Network programming and advanced network concept course. C systems programming involving sockets and threads. Ad-hoc wireless networks, load balancing, DNS, and VLAN.
-My contribution: leading the labs as teaching associate, preparing course materials and assignments.
+Network programming and advanced network concept course. C systems programming involving sockets and threads. Ad-hoc wireless networks, load balancing, DNS, and VLAN
+My contribution: leading the labs as teaching associate, preparing course materials and assignments
 Led by: Michał Sajkowski
 
 `2012–2013`
 [**Networks** (SK1)](http://www.cs.put.poznan.pl/ksiek/sk/sk.html)
 at [Poznań University of Technology](http://www.put.poznan.pl/)  
-Introductory course to computer networks: IP addressing, subnets, structural cabling, OSI model with details on physical, network, and transport layers, static and dynamic routing.
-Contribution: leading the labs as teaching associate, preparing course materials and assignments.
+Introductory course to computer networks: IP addressing, subnets, structural cabling, OSI model with details on physical, network, and transport layers, static and dynamic routing
+Contribution: leading the labs as teaching associate, preparing course materials and assignments
 Led by: Michał Kalewski
 
 `2009–2016`
 [**Operating systems** (SOP)](http://www.cs.put.poznan.pl/ksiek/sop/sop.html)
 at [Poznań University of Technology](http://www.put.poznan.pl/)  
-Introductory course to operating systems: OS definition, processor scheduling, virtual memory, I/O, and filesystems. The laboratory portion involved an introduction to Linux and Bash.  
-Contribution: leading the labs as teaching associate, preparing course materials and assignments.  
+Introductory course to operating systems: OS definition, processor scheduling, virtual memory, I/O, and filesystems. The laboratory portion involved an introduction to Linux and Bash  
+Contribution: leading the labs as teaching associate, preparing course materials and assignments  
 Led by: Dariusz Wawrzyniak, Anna Kobusińska, and Michał Sajkowski  
 
 <!--
@@ -266,9 +270,9 @@ In Proceedings of ECOOP'21: European Conference on Object-Oriented Programming
 DOI: [10.4230/LIPIcs.ECOOP.2021.6](https://doi.org/10.4230/LIPIcs.ECOOP.2021.6) and artifact: [🔗](https://github.com/PRL-PRG/codedj-ecoop-artifact)
 
 `Submitted December 2019`
-**Last-use Opacity: A Strong Safety Property for Transactional Memory with Prerelease Support**.  
+**Last-use Opacity: A Strong Safety Property for Transactional Memory with Prerelease Support**  
 `Accepted December 2021`
-Konrad Siek, Paweł T. Wojciechowski.  
+Konrad Siek, Paweł T. Wojciechowski  
 Distributed Computing.  *To appear.*
 
 `March 2018`
@@ -418,7 +422,7 @@ Role: faculty organizer
 
 `2007`
 [**District Municipal Public Library in Piła CMS system**](https://www.biblioteka.pila.pl/)  
-Role: developement and deployment for a content manmagement system for the local library website.
+Role: developement and deployment for a content manmagement system for the local library website
 
 Popular science talks and programming courses:  
  
