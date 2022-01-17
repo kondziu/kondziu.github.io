@@ -10,6 +10,10 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ## Czech Technical University in Prague
 
+**Runtime Systems**
+Course instructor. 2020-2022.
+[[Website](https://courses.fit.cvut.cz/NI-RUN/)].
+
 **Object Oriented Programming (and Design)**
 Tutorial instructor. Fall 2019.
 [[Website](https://courses.fit.cvut.cz/BI-OOP/)].

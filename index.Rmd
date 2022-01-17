@@ -15,9 +15,12 @@ knitr::opts_chunk$set(echo=FALSE)
 ![pic](img/photo2.jpg)
 <a href="mailto:siekkonr🐒fit.cvut.cz">siekkonr🐒fit.cvut.cz</a>  
 
-I am interested in distributed systems and concurrency, especially transactional memory, which was the topic of my doctoral dissertation. I am also really interested in programming language research and I am in the process of transitioning towards that.
+I did my doctoral work in the fields of concurrency and distributed systems, especially transactional memory, which was the topic of my dissertation.  
 
-I currently do research on the [R language](http://www.r-project.org) and its use of promises and laziness.  
+I am currently interested in programming language runtimes.
+My current work revolves around the internals of the [R language](http://www.r-project.org) and implementing larger-than-memory runtime objects.  
+
+I am also helping to develop a [CodeDJ](codedj-prg.github.io) system for using large software repositories for quantitative software engineering research (like GitHub).
 
 I like hamsters and bamboo swords and I seek difficult ways to solve simple problems.
 
@@ -26,6 +29,38 @@ I like hamsters and bamboo swords and I seek difficult ways to solve simple prob
 ## Research <small>(some of it)</small>
 
 <!--In January 2017 I defended my **PhD thesis** at Poznań University of Technology, advised by [Paweł T. Wojciechowski](http://www.cs.put.poznan.pl/pawelw). It explored the idea of using early release to improve the performance of pessimistic transactional memory.-->
+
+![pin](img/cvut.jpg) 
+Petr Maj, Konrad Siek, Alexander Kovalenko, Jan Vitek.  
+**CodeDJ: Reproducible Queries over Large-Scale Software Repositories.**  
+ECOOP'21. [[LIPIcs](10.4230/LIPIcs.ECOOP.2021.6)]
+
+**Abstract:** CodeDJ is an infrastructure for querying repositories. It consists of a persistent datastore, constantly updated
+with data acquired from GitHub, and an in-memory database with a Rust query interface. CodeDJ
+supports reproducibility, historical queries are answered deterministically using past states of the
+datastore. This allows researchers to reproduce published results.
+
+<hr/>
+
+![pin](img/cvut.jpg) 
+Konrad Siek and Colette Kerr.  
+**Userfault objects: transparent programmable memory.**  
+ICOOOLPS'21. [[Arxiv](https://conf.researchr.org/details/issta-2021/ecoop-issta-2021-icooolps/6/Userfault-Objects-Transparent-Programmable-Memory)]  
+
+**Abstract:** We implement a framework that employs the Linux kernel’s userfault mechanism to fill the contents of runtime objects on demand. When an object’s memory is accessed the framework executes a user-defined function that generates a slice of the object. The back-end can generate data from thin air, calculate it from a formula, or retrieve it from persistent storage, the network, or other sources (with or without post-processing). UFOs follow the memory layout of standard runtime objects, so they can be introspected and written to safely. 
+
+<hr/>
+
+![pin](img/put.png)
+![pin](img/cvut.jpg) 
+Konrad Siek, Paweł T. Wojciechowski.  
+**Last-use Opacity: A Strong Safety Property for Transactional Memory with Prerelease Support.**  
+Distributed Computing (*to appear*). 
+
+**Abstract:** Transactional memory requires strong safety guarantees. Database properties like serializability are not enough. On the other hand TM properties like Opacity are too strict, because they preclude reading from all live transactions. 
+We propose a safety property called last-use opacity that relaxes opacity to allow reading values written by live transactions if the releasing transaction will not subsequently overwrite the value.
+
+<hr/>
 
 ![pin](img/put.png) 
 Konrad Siek (advisor: Paweł T. Wojciechowski).  
@@ -42,12 +77,12 @@ We use pessimistic DTM to make transactions with irrevocable side effects safe. 
 ![pin](img/put.png)
 Paweł Kobyliński, Konrad Siek, Jan Baranowski, Paweł T. Wojciechowski.  
 **Helenos: A Realistic Benchmark for Distributed Transactional Memory**.  
-Journal of Software: Practice and Experience. volume 48, issue 3. March 2018.[Wiley](http://onlinelibrary.wiley.com/doi/10.1002/spe.2548/full)]
+Journal of Software: Practice and Experience. volume 48, issue 3. March 2018. [Wiley](http://onlinelibrary.wiley.com/doi/10.1002/spe.2548/full)]
 
 **Abstract:**
 We introduce a parameterizable benchmark for distributed TM based on the Facebook inbox application described in the Cassandra paper (Lakshman, Malik 2010). We show an example evaluation of HyFlow2 and Atomic RMI.
 
-<hr/>
+<!--hr/>
 
 ![pin](img/put.png)
 Paweł T. Wojciechowski, Konrad Siek.  
@@ -57,6 +92,7 @@ PaPEC'14.
 
 **Abstract:** 
 We propose a distributed TM system that allows strongly and weakly consistent transactions to co-exist. Weak transactions execute twice: a strong and a weak version. The result of the strong one eventually overwrites the result of the weak one.
+-->
 
 <hr/>
 

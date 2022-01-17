@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 
 <head>
 
 <meta charset="utf-8" />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
 
 
 <title>Konrad Siek</title>
 
+<script src="site_libs/header-attrs-2.3/header-attrs.js"></script>
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
@@ -69,9 +70,7 @@ h6 {
 </style>
 
 
-</head>
 
-<body>
 
 <style type = "text/css">
 .main-container {
@@ -85,13 +84,18 @@ code {
 }
 img {
   max-width:100%;
-  height: auto;
 }
 .tabbed-pane {
   padding-top: 12px;
 }
+.html-widget {
+  margin-bottom: 20px;
+}
 button.code-folding-btn:focus {
   outline: none;
+}
+summary {
+  display: list-item;
 }
 </style>
 
@@ -107,7 +111,6 @@ body {
   padding-top: 56px;
   margin-top: -56px;
 }
-
 .section h2 {
   padding-top: 56px;
   margin-top: -56px;
@@ -127,6 +130,43 @@ body {
 .section h6 {
   padding-top: 56px;
   margin-top: -56px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
 }
 </style>
 
@@ -148,19 +188,74 @@ $(document).ready(function () {
 });
 </script>
 
-
-<div class="container-fluid main-container">
-
 <!-- tabsets -->
-<script>
-$(document).ready(function () {
-  window.buildTabsets("TOC");
-});
-</script>
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
 
 <!-- code folding -->
 
 
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
 
 
 
@@ -211,13 +306,29 @@ img[alt$="pin"] { width: 66px; padding: 5px; float: right; }
 img[alt$="pic"] { width: 150px; float: right; vertical-align: top; padding-left: 15px;}
 </style>
 <p><img src="img/photo2.jpg" alt="pic" /> <a href="mailto:siekkonr🐒fit.cvut.cz">siekkonr🐒fit.cvut.cz</a></p>
-<p>I am interested in distributed systems and concurrency, especially transactional memory, which was the topic of my doctoral dissertation. I am also really interested in programming language research and I am in the process of transitioning towards that.</p>
-<p>I currently do research on the <a href="http://www.r-project.org">R language</a> and its use of promises and laziness.</p>
+<p>I did my doctoral work in the fields of concurrency and distributed systems, especially transactional memory, which was the topic of my dissertation.</p>
+<p>I am currently interested in programming language runtimes. My current work revolves around the internals of the <a href="http://www.r-project.org">R language</a> and implementing larger-than-memory runtime objects.</p>
+<p>I am also helping to develop a <a href="codedj-prg.github.io">CodeDJ</a> system for using large software repositories for quantitative software engineering research (like GitHub).</p>
 <p>I like hamsters and bamboo swords and I seek difficult ways to solve simple problems.</p>
 <hr/>
 <div id="research-some-of-it" class="section level2">
 <h2>Research <small>(some of it)</small></h2>
 <!--In January 2017 I defended my **PhD thesis** at Poznań University of Technology, advised by [Paweł T. Wojciechowski](http://www.cs.put.poznan.pl/pawelw). It explored the idea of using early release to improve the performance of pessimistic transactional memory.-->
+<p><img src="img/cvut.jpg" alt="pin" /> Petr Maj, Konrad Siek, Alexander Kovalenko, Jan Vitek.<br />
+<strong>CodeDJ: Reproducible Queries over Large-Scale Software Repositories.</strong><br />
+ECOOP’21. [<a href="10.4230/LIPIcs.ECOOP.2021.6">LIPIcs</a>]</p>
+<p><strong>Abstract:</strong> CodeDJ is an infrastructure for querying repositories. It consists of a persistent datastore, constantly updated with data acquired from GitHub, and an in-memory database with a Rust query interface. CodeDJ supports reproducibility, historical queries are answered deterministically using past states of the datastore. This allows researchers to reproduce published results.</p>
+<hr/>
+<p><img src="img/cvut.jpg" alt="pin" /> Konrad Siek and Colette Kerr.<br />
+<strong>Userfault objects: transparent programmable memory.</strong><br />
+ICOOOLPS’21. [<a href="https://conf.researchr.org/details/issta-2021/ecoop-issta-2021-icooolps/6/Userfault-Objects-Transparent-Programmable-Memory">Arxiv</a>]</p>
+<p><strong>Abstract:</strong> We implement a framework that employs the Linux kernel’s userfault mechanism to fill the contents of runtime objects on demand. When an object’s memory is accessed the framework executes a user-defined function that generates a slice of the object. The back-end can generate data from thin air, calculate it from a formula, or retrieve it from persistent storage, the network, or other sources (with or without post-processing). UFOs follow the memory layout of standard runtime objects, so they can be introspected and written to safely.</p>
+<hr/>
+<p><img src="img/put.png" alt="pin" /> <img src="img/cvut.jpg" alt="pin" /> Konrad Siek, Paweł T. Wojciechowski.<br />
+<strong>Last-use Opacity: A Strong Safety Property for Transactional Memory with Prerelease Support.</strong><br />
+Distributed Computing (<em>to appear</em>).</p>
+<p><strong>Abstract:</strong> Transactional memory requires strong safety guarantees. Database properties like serializability are not enough. On the other hand TM properties like Opacity are too strict, because they preclude reading from all live transactions. We propose a safety property called last-use opacity that relaxes opacity to allow reading values written by live transactions if the releasing transaction will not subsequently overwrite the value.</p>
+<hr/>
 <p><img src="img/put.png" alt="pin" /> Konrad Siek (advisor: Paweł T. Wojciechowski).<br />
 <strong>Distributed Pessimistic Transactional Memory: Algorithms and Properties</strong> (doctoral dissertation).<br />
 Faculty of Computing Science at Poznań University of Technology. Defended January 2017. [<a href="pub/dissertation.pdf">PDF</a>] <!--, [TeX](pub/dissertation.tar.gz), [PUT library](https://pp-hip.pfsl.poznan.pl/ipac20/ipac.jsp?session=151C8173887J1.41469&profile=put-library&uri=link=3100007~!756389~!3100001~!3100002&aspect=basic_search&menu=search&ri=8&source=~!bpptest&term=Distributed+Pessimistic+Transactional+Memory%3A+Algorithms+and+Properties+%2F&index=ALTITLE)]--></p>
@@ -225,13 +336,19 @@ Faculty of Computing Science at Poznań University of Technology. Defended Janua
 <hr/>
 <p><img src="img/put.png" alt="pin" /> Paweł Kobyliński, Konrad Siek, Jan Baranowski, Paweł T. Wojciechowski.<br />
 <strong>Helenos: A Realistic Benchmark for Distributed Transactional Memory</strong>.<br />
-Journal of Software: Practice and Experience. volume 48, issue 3. March 2018.<a href="http://onlinelibrary.wiley.com/doi/10.1002/spe.2548/full">Wiley</a>]</p>
+Journal of Software: Practice and Experience. volume 48, issue 3. March 2018. <a href="http://onlinelibrary.wiley.com/doi/10.1002/spe.2548/full">Wiley</a>]</p>
 <p><strong>Abstract:</strong> We introduce a parameterizable benchmark for distributed TM based on the Facebook inbox application described in the Cassandra paper (Lakshman, Malik 2010). We show an example evaluation of HyFlow2 and Atomic RMI.</p>
-<hr/>
-<p><img src="img/put.png" alt="pin" /> Paweł T. Wojciechowski, Konrad Siek.<br />
-<strong>Having Your Cake and Eating it Too: Combining Strong and Eventual Consistency</strong>.<br />
-PaPEC’14. [<a href="pub/papec14.pdf">PDF</a>]</p>
-<p><strong>Abstract:</strong> We propose a distributed TM system that allows strongly and weakly consistent transactions to co-exist. Weak transactions execute twice: a strong and a weak version. The result of the strong one eventually overwrites the result of the weak one.</p>
+<!--hr/>
+
+![pin](img/put.png)
+Paweł T. Wojciechowski, Konrad Siek.  
+**Having Your Cake and Eating it Too: Combining Strong and Eventual Consistency**.  
+PaPEC'14.
+[[PDF](pub/papec14.pdf)]
+
+**Abstract:** 
+We propose a distributed TM system that allows strongly and weakly consistent transactions to co-exist. Weak transactions execute twice: a strong and a weak version. The result of the strong one eventually overwrites the result of the weak one.
+-->
 <hr/>
 </div>
 <div id="positions" class="section level2">
@@ -275,6 +392,23 @@ $(document).ready(function () {
 
 
 </script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>
