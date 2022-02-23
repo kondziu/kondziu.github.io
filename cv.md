@@ -112,7 +112,7 @@ Advisor: Anna Szczepaniak-Kozak
 
 `2008–2009`
 **Developer** for [PSI Poland](https://www.psi.pl)  
-‣ Database stuff for an automotive factory
+‣ Database management and back-end programming for an automotive factory order management system
 
 `2005–2006`
 **Apprentice English Language Teacher** at [Elementary School No. 4 in Piła](https://sp4.e-pila.pl/)  

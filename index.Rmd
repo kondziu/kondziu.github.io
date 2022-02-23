@@ -100,19 +100,19 @@ We propose a distributed TM system that allows strongly and weakly consistent tr
 
 ![pin](img/cvut.jpg)
 ![pin](img/prl-prg-small.png) 
-Post-doc research assistant    
+Post-doc research assistant  (from 2017)  
 [PRL-PRG](http://prl-prg.github.io) at [Czech Technical University in Prague](http://www.cvut.cz)  
 <br/>
 
 ![pin](img/neu.png)
 ![pin](img/prl.png) 
-Post-doc research assistant/instructor (occasionally)  
+Post-doc research assistant/instructor (2017)  
 [PRL](http://prl.ccs.neu.edu) at [Northeastern](http://www.northeastern.edu)  
 <br/>
 
 ![pin](img/put.png) 
 ![pin](img/dsg.png) 
-Research assistant (currently on sabbatical)  
+Research assistant (until 2016)  
 [DSG](http://dsg.cs.put.poznan.pl) at [Poznań University of Technology](http://www.put.poznan.pl)  
 <br/>
 
