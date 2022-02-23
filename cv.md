@@ -15,8 +15,7 @@ layout: cv
 
 <link rel="stylesheet" href="css/davidwhipp-screen.css">
 
-<img style="position: absolute; text-align: right; right: -20%; " src="img/20220105_0102.jpg">
-
+<img align="right" src="img/20220105_0102.jpg" style="max-width: 30%; padding-left: 5px;">
 
 konrad.siek🐌gmail.com
 
