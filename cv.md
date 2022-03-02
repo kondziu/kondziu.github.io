@@ -413,7 +413,7 @@ Role: management comittee substitute member for Poland
 
 `2014–2016`
 [**PIWO:** Poznańska Impreza Wolnego Oprogramowania (Poznań Free Software Meetup)](https://www.facebook.com/piwo.poznan/)  
-Role: lead organizer and resurector
+Role: lead organizer and resurrector
 
 `2012–2016`
 [**KN SKISR:** Koło Naukowe Sieci Komputerowych i Systemów Rozproszonych (Networks and Distributed Systems Student Club)](https://www.facebook.com/knskisr/)  
@@ -425,7 +425,7 @@ Role: developement and deployment for a content manmagement system for the local
 
 Popular science talks and programming courses:  
  
-‣ [*Remedial scala*](https://courses.fit.cvut.cz/BI-OOP/@B191/labs/remedial-scala.html) `2019`  
+‣ [*Remedial Scala*](https://courses.fit.cvut.cz/BI-OOP/@B191/labs/remedial-scala.html) `2019`  
 ‣ [*Transactional safety primer (aka Konrad does Transactions)*](https://kondziu.github.io/talks/opacity/slides.html) `2018`  
 ‣ [*System Aktorów (Actor Systems)*](http://www.cs.put.poznan.pl/ksiek/talks/actors.html) `2016`  
 ‣ [*Podstawy Programowania w Pythonie (Basics of Python Programming)*](http://www.cs.put.poznan.pl/ksiek/talks/python.html) `2015`  
